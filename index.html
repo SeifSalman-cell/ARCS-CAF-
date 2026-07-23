@@ -28,7 +28,7 @@
     <div class="hero__text">
       <p class="eyebrow">Lyon — rue Terme</p>
       <h1 class="hero__title">Arcs<br>Cafe</h1>
-      <p class="hero__tagline">La première gaufre salée de France.<br>Et tout ce qui va avec.</p>
+      <p class="hero__tagline">La première gaufre salée de France.<br>Et les plus jolis arcs du quartier.</p>
       <p class="hero__desc">Gaufres et crêpes, salées ou sucrées, façonnées à la commande. En vitrine : douceurs du jour, sandwichs et bowls riches en protéines.</p>
       <div class="hero__actions">
         <a href="#menu" class="btn btn--solid">Découvrir le menu</a>
@@ -36,11 +36,63 @@
       </div>
     </div>
 
-    <div class="hero__arches" aria-hidden="false" role="img" aria-label="Les quatre arcs en pierre de la vitrine du café">
-      <div class="arch arch--1"><span class="arch__label">Gaufre salée</span></div>
-      <div class="arch arch--2"><span class="arch__label">Crêpe salée</span></div>
-      <div class="arch arch--3"><span class="arch__label">Gaufre sucrée</span></div>
-      <div class="arch arch--4"><span class="arch__label">Vitrine du jour</span></div>
+    <div class="hero__arches" role="img" aria-label="Les quatre arcs en pierre de la vitrine du café, un par spécialité">
+
+      <div class="arch">
+        <svg class="arch__shape" viewBox="0 0 120 190" aria-hidden="true">
+          <path d="M2 188 V70 C2 32 28 2 60 2 C92 2 118 32 118 70 V188" />
+        </svg>
+        <span class="arch__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+            <rect x="3" y="6" width="18" height="14" rx="2"/>
+            <path d="M3 11h18M3 15h18M9 6v14M15 6v14"/>
+          </svg>
+        </span>
+        <span class="arch__label"><em>Arc I</em>Gaufre salée</span>
+      </div>
+
+      <div class="arch">
+        <svg class="arch__shape" viewBox="0 0 120 190" aria-hidden="true">
+          <path d="M2 188 V70 C2 32 28 2 60 2 C92 2 118 32 118 70 V188" />
+        </svg>
+        <span class="arch__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 5c6 0 12 5 16 14"/>
+            <path d="M4 5c0 6 4 11 9 14"/>
+            <path d="M4 5c-1 5 1 10 5 13"/>
+          </svg>
+        </span>
+        <span class="arch__label"><em>Arc II</em>Crêpe salée</span>
+      </div>
+
+      <div class="arch">
+        <svg class="arch__shape" viewBox="0 0 120 190" aria-hidden="true">
+          <path d="M2 188 V70 C2 32 28 2 60 2 C92 2 118 32 118 70 V188" />
+        </svg>
+        <span class="arch__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+            <path d="M4 16c2-6 4-9 8-9s6 3 8 9"/>
+            <path d="M4 16h16"/>
+            <circle cx="12" cy="6.5" r="1.1" fill="currentColor" stroke="none"/>
+          </svg>
+        </span>
+        <span class="arch__label"><em>Arc III</em>Sucrée</span>
+      </div>
+
+      <div class="arch">
+        <svg class="arch__shape" viewBox="0 0 120 190" aria-hidden="true">
+          <path d="M2 188 V70 C2 32 28 2 60 2 C92 2 118 32 118 70 V188" />
+        </svg>
+        <span class="arch__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 10c0-3.5 3.5-6 8-6s8 2.5 8 6"/>
+            <path d="M3 10h18"/>
+            <path d="M4 10v6h16v-6"/>
+          </svg>
+        </span>
+        <span class="arch__label"><em>Arc IV</em>Vitrine du jour</span>
+      </div>
+
     </div>
   </section>
 
@@ -48,8 +100,8 @@
   <section class="histoire" id="histoire">
     <div class="histoire__inner">
       <p class="eyebrow eyebrow--light">D'où vient le nom</p>
-      <h2 class="histoire__title">Quatre arcs en vitrine,<br>de la pierre à l'intérieur</h2>
-      <p class="histoire__text">Le café tient son nom de sa façade&nbsp;: quatre arcs en pierre, formés comme les voûtes des vieux bistrots du quartier. À l'intérieur, la pierre naturelle continue l'histoire jusqu'au comptoir.</p>
+      <h2 class="histoire__title">Quatre arcs en pierre,<br>les plus jolis de la rue</h2>
+      <p class="histoire__text">Le café tient son nom de sa façade&nbsp;: quatre arcs en pierre, formés comme les voûtes des vieux bistrots du quartier. À l'intérieur, la même pierre naturelle continue l'histoire jusqu'au comptoir.</p>
       <p class="histoire__text">C'est dans ce décor qu'on prépare tout à la minute&nbsp;: la pâte à gaufre repose, la crêpe cuit à la commande. Rien n'attend sous une lampe chauffante.</p>
     </div>
   </section>
@@ -62,27 +114,27 @@
 
     <div class="menu__grid">
       <article class="menu-card">
-        <div class="menu-card__arch"></div>
-        <h3>Gaufres salées</h3>
-        <p>Croustillantes à l'extérieur, moelleuses à l'intérieur, garnies au moment de servir.</p>
+        <span class="menu-card__tag">Arc I</span>
+        <h3>Gaufre salée</h3>
+        <p>Le plat qui a ouvert la voie&nbsp;: croustillante dehors, moelleuse dedans, garnie devant vous.</p>
       </article>
 
       <article class="menu-card">
-        <div class="menu-card__arch"></div>
-        <h3>Crêpes salées</h3>
-        <p>Blé noir, pliées à la minute, à composer selon l'envie du jour.</p>
+        <span class="menu-card__tag">Arc II</span>
+        <h3>Crêpe salée</h3>
+        <p>Blé noir, pliée à la minute&nbsp;: jamais tout à fait la même deux fois.</p>
       </article>
 
       <article class="menu-card">
-        <div class="menu-card__arch"></div>
-        <h3>Gaufres &amp; crêpes sucrées</h3>
-        <p>La version douce du même savoir-faire, sans jamais rogner sur la fraîcheur.</p>
+        <span class="menu-card__tag">Arc III</span>
+        <h3>Sucrée</h3>
+        <p>Même geste, version douce&nbsp;: gaufres et crêpes sucrées, sans jamais rogner sur la fraîcheur.</p>
       </article>
 
       <article class="menu-card">
-        <div class="menu-card__arch"></div>
+        <span class="menu-card__tag">Arc IV</span>
         <h3>Vitrine du jour</h3>
-        <p>Desserts, sandwichs et bowls riches en protéines, prêts à emporter.</p>
+        <p>Ce qui est déjà prêt, sans jamais attendre&nbsp;: desserts, sandwichs et bowls riches en protéines.</p>
       </article>
     </div>
   </section>
