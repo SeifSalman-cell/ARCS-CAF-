@@ -1,18 +1,22 @@
 /* ============================================
    ARCS CAFE — palette & tokens
+   Vert profond (proche RAL 6035) + doré
    ============================================ */
 :root {
-  --espresso: #2b1d14;      /* brun torréfié, texte principal / fond sombre */
-  --espresso-2: #3a291c;    /* nuance plus claire pour dégradés sombres */
-  --stone: #cdbfa6;         /* pierre naturelle de l'intérieur */
-  --stone-light: #e6dcc8;
-  --waffle: #c6862e;        /* gaufre dorée — accent principal */
-  --waffle-dark: #a86c22;
-  --cream: #f3ead9;         /* pâte à gaufre — fond clair */
-  --cream-2: #ece0c9;
-  --rust: #8a3b2a;          /* brique / pierre rouge — accent secondaire */
-  --ink: #241c15;           /* texte sur fond clair */
-  --ink-soft: #5a4c3c;
+  --green-deep: #10261a;    /* fond très sombre (footer, dégradés) */
+  --green: #1c4a2e;         /* vert principal — proche RAL 6035 */
+  --green-soft: #3b6b4a;    /* vert plus clair, bordures / textes sur fond sombre */
+  --green-mist: #dfe6de;    /* vert très clair, textes secondaires sur fond sombre */
+
+  --gold: #c9a227;          /* doré principal — accent signature */
+  --gold-light: #e4cb75;    /* doré clair, surbrillance / hover */
+  --gold-deep: #8f6d1e;     /* doré profond, ombre / profondeur */
+
+  --parchment: #f5f0e1;     /* fond clair chaud */
+  --parchment-2: #ece3cc;   /* fond clair, cartes */
+
+  --ink: #17231b;           /* texte sur fond clair */
+  --ink-soft: #4d5c50;      /* texte secondaire sur fond clair */
 
   --font-display: "Fraunces", serif;
   --font-body: "Karla", sans-serif;
@@ -31,7 +35,7 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  background: var(--cream);
+  background: var(--parchment);
   color: var(--ink);
   font-family: var(--font-body);
   font-size: 17px;
@@ -45,7 +49,7 @@ a {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid var(--waffle);
+  outline: 3px solid var(--gold);
   outline-offset: 3px;
 }
 
@@ -54,10 +58,10 @@ button:focus-visible {
   font-size: 0.78rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--rust);
+  color: var(--gold-deep);
   margin: 0 0 0.9rem;
 }
-.eyebrow--light { color: var(--waffle); }
+.eyebrow--light { color: var(--gold); }
 
 /* ============================================
    TOPBAR
@@ -70,9 +74,9 @@ button:focus-visible {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(243, 234, 217, 0.86);
+  background: rgba(245, 240, 225, 0.86);
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid rgba(43, 29, 20, 0.08);
+  border-bottom: 1px solid rgba(28, 74, 46, 0.14);
 }
 
 .topbar__brand {
@@ -80,6 +84,7 @@ button:focus-visible {
   font-weight: 600;
   font-size: 1.3rem;
   letter-spacing: 0.01em;
+  color: var(--green);
 }
 
 .topbar__nav {
@@ -94,9 +99,9 @@ button:focus-visible {
 .topbar__nav a {
   border-bottom: 1px solid transparent;
   padding-bottom: 2px;
-  transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease, color 0.2s ease;
 }
-.topbar__nav a:hover { border-color: var(--waffle); }
+.topbar__nav a:hover { border-color: var(--gold); color: var(--green); }
 
 /* ============================================
    HERO
@@ -117,7 +122,7 @@ button:focus-visible {
   font-size: clamp(3.4rem, 8vw, 6rem);
   line-height: 0.94;
   margin: 0 0 1.4rem;
-  color: var(--espresso);
+  color: var(--green);
 }
 
 .hero__tagline {
@@ -125,7 +130,7 @@ button:focus-visible {
   font-weight: 500;
   font-style: italic;
   font-size: clamp(1.15rem, 2vw, 1.4rem);
-  color: var(--rust);
+  color: var(--gold-deep);
   margin: 0 0 1.3rem;
   line-height: 1.35;
 }
@@ -150,66 +155,96 @@ button:focus-visible {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   border-radius: 2px;
-  transition: transform 0.15s ease, background 0.2s ease, color 0.2s ease;
+  transition: transform 0.15s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 .btn--solid {
-  background: var(--espresso);
-  color: var(--cream);
+  background: var(--green);
+  color: var(--parchment);
 }
-.btn--solid:hover { background: var(--rust); transform: translateY(-1px); }
+.btn--solid:hover { background: var(--gold-deep); transform: translateY(-1px); }
 
 .btn--line {
-  border: 1.5px solid var(--espresso);
-  color: var(--espresso);
+  border: 1.5px solid var(--green);
+  color: var(--green);
 }
-.btn--line:hover { background: var(--espresso); color: var(--cream); }
+.btn--line:hover { background: var(--green); color: var(--parchment); }
 
 /* -- Les quatre arcs (signature) -- */
 .hero__arches {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0.7rem;
+  gap: 0.9rem;
   align-items: end;
 }
 
 .arch {
   position: relative;
   aspect-ratio: 2 / 3.1;
-  border-radius: 999px 999px 6px 6px;
-  background:
-    linear-gradient(160deg, rgba(255,255,255,0.12), rgba(0,0,0,0.08)),
-    var(--stone);
-  border: 1px solid rgba(43, 29, 20, 0.15);
-  display: flex;
-  align-items: flex-end;
-  overflow: hidden;
-  box-shadow: inset 0 -18px 26px -18px rgba(43, 29, 20, 0.45);
+  transition: transform 0.2s ease;
 }
 
-.arch--1 { background-color: var(--stone); }
-.arch--2 { background-color: var(--stone-light); }
-.arch--3 { background-color: #d8c9ac; }
-.arch--4 { background-color: var(--stone); }
+.arch:hover { transform: translateY(-4px); }
+
+.arch__shape {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.arch__shape path {
+  fill: var(--green);
+  stroke: var(--gold);
+  stroke-width: 1.6;
+  vector-effect: non-scaling-stroke;
+}
+
+.arch:nth-child(2) .arch__shape path { fill: #244f31; }
+.arch:nth-child(3) .arch__shape path { fill: #1a4429; }
+.arch:nth-child(4) .arch__shape path { fill: #21532f; }
+
+.arch__icon {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  color: var(--gold-light);
+}
 
 .arch__label {
-  display: block;
-  width: 100%;
-  padding: 0.6rem 0.5rem 0.8rem;
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.03em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0 0.6rem 1rem;
   text-align: center;
-  color: var(--espresso);
-  background: linear-gradient(180deg, rgba(243,234,217,0) 0%, rgba(243,234,217,0.92) 55%);
+  color: var(--parchment);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.arch__label em {
+  font-family: var(--font-mono);
+  font-style: normal;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-light);
 }
 
 /* ============================================
    HISTOIRE
    ============================================ */
 .histoire {
-  background: radial-gradient(120% 140% at 15% 0%, var(--espresso-2) 0%, var(--espresso) 55%);
-  color: var(--cream-2);
+  background: radial-gradient(120% 140% at 15% 0%, #1e4a2e 0%, var(--green-deep) 60%);
+  color: var(--green-mist);
   padding: clamp(3.5rem, 8vw, 6rem) clamp(1.5rem, 5vw, 4rem);
 }
 
@@ -224,12 +259,12 @@ button:focus-visible {
   font-size: clamp(1.9rem, 4vw, 2.6rem);
   line-height: 1.15;
   margin: 0 0 1.6rem;
-  color: var(--stone-light);
+  color: var(--gold-light);
 }
 
 .histoire__text {
   margin: 0 0 1.1rem;
-  color: #d8c9ac;
+  color: var(--green-mist);
 }
 
 /* ============================================
@@ -247,7 +282,7 @@ button:focus-visible {
   font-weight: 600;
   font-size: clamp(2.2rem, 5vw, 3rem);
   margin: 0 0 0.8rem;
-  color: var(--espresso);
+  color: var(--green);
 }
 
 .menu__note {
@@ -265,18 +300,22 @@ button:focus-visible {
 }
 
 .menu-card {
-  background: var(--cream-2);
-  border: 1px solid rgba(43, 29, 20, 0.1);
-  border-radius: 6px;
-  padding: 1.8rem 1.5rem 2rem;
+  position: relative;
+  background: var(--parchment-2);
+  border: 1px solid rgba(28, 74, 46, 0.14);
+  border-top: 3px solid var(--gold);
+  border-radius: 4px;
+  padding: 1.9rem 1.5rem 2rem;
 }
 
-.menu-card__arch {
-  width: 34px;
-  height: 46px;
-  margin-bottom: 1.1rem;
-  border-radius: 999px 999px 3px 3px;
-  background: var(--waffle);
+.menu-card__tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-bottom: 0.9rem;
 }
 
 .menu-card h3 {
@@ -284,7 +323,7 @@ button:focus-visible {
   font-weight: 600;
   font-size: 1.2rem;
   margin: 0 0 0.6rem;
-  color: var(--espresso);
+  color: var(--green);
 }
 
 .menu-card p {
@@ -297,8 +336,8 @@ button:focus-visible {
    VISITE
    ============================================ */
 .visite {
-  background: var(--espresso);
-  color: var(--cream);
+  background: var(--green-deep);
+  color: var(--parchment);
   padding: clamp(3.5rem, 8vw, 6rem) clamp(1.5rem, 5vw, 4rem);
 }
 
@@ -312,14 +351,14 @@ button:focus-visible {
   font-weight: 600;
   font-size: clamp(2rem, 4.5vw, 2.8rem);
   margin: 0 0 2.4rem;
-  color: var(--stone-light);
+  color: var(--gold-light);
 }
 
 .visite__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
-  border-top: 1px solid rgba(243, 234, 217, 0.2);
+  border-top: 1px solid rgba(245, 240, 225, 0.2);
   padding-top: 2rem;
 }
 
@@ -334,13 +373,13 @@ button:focus-visible {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--waffle);
+  color: var(--gold);
 }
 
 .visite__value {
   font-family: var(--font-display);
   font-size: 1.3rem;
-  color: var(--cream);
+  color: var(--parchment);
 }
 
 /* ============================================
@@ -349,8 +388,8 @@ button:focus-visible {
 .footer {
   text-align: center;
   padding: 2.4rem 1.5rem 3rem;
-  background: var(--espresso);
-  color: var(--stone);
+  background: var(--green-deep);
+  color: var(--green-soft);
   font-family: var(--font-mono);
   font-size: 0.78rem;
 }
@@ -366,8 +405,8 @@ button:focus-visible {
   width: 10px;
   height: 16px;
   border-radius: 999px 999px 2px 2px;
-  background: var(--waffle);
-  opacity: 0.7;
+  background: var(--gold);
+  opacity: 0.75;
 }
 
 /* ============================================
