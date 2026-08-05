@@ -1887,3 +1887,378 @@ summary {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Menu editorial redesign */
+.menu-preview {
+  position: relative;
+  padding-top: 155px;
+  padding-bottom: 175px;
+  background:
+    radial-gradient(circle at 8% 15%, rgba(195, 164, 94, 0.1), transparent 22%),
+    radial-gradient(circle at 92% 76%, rgba(11, 61, 49, 0.07), transparent 24%),
+    var(--cream);
+}
+
+.menu-preview::before {
+  position: absolute;
+  top: 58px;
+  right: max(36px, calc((100vw - 1400px) / 2));
+  left: max(36px, calc((100vw - 1400px) / 2));
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  content: "";
+  opacity: 0.6;
+}
+
+.menu-preview .section-heading {
+  margin-bottom: 42px;
+}
+
+.menu-preview .section-heading h2 {
+  color: var(--green);
+  font-size: clamp(3.5rem, 6vw, 6.2rem);
+}
+
+.menu-preview .section-intro {
+  max-width: 510px;
+  color: #6c776f;
+  font-family: var(--display);
+  font-size: 1.18rem;
+}
+
+.menu-jump {
+  position: relative;
+  z-index: 2;
+  gap: 0;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto 60px;
+  padding: 5px;
+  border: 1px solid rgba(195, 164, 94, 0.45);
+  border-radius: 999px;
+  background: rgba(255, 253, 248, 0.75);
+  box-shadow: 0 12px 34px rgba(24, 51, 43, 0.08);
+}
+
+.menu-jump a {
+  padding: 12px 19px;
+  border: 0;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.menu-jump a:first-child,
+.menu-jump a:hover,
+.menu-jump a:focus-visible {
+  background: var(--green);
+  color: var(--gold-bright);
+}
+
+.full-menu {
+  grid-template-columns: minmax(0, 1.32fr) minmax(320px, 0.88fr);
+  gap: 24px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.menu-panel {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(34px, 4vw, 54px);
+  border: 0;
+  border-radius: 2px;
+  background: rgba(255, 253, 248, 0.84);
+  box-shadow: 0 24px 70px rgba(24, 51, 43, 0.09);
+}
+
+.menu-panel::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  border-top: 1px solid var(--gold);
+  border-right: 1px solid var(--gold);
+  content: "";
+  opacity: 0.75;
+}
+
+.menu-panel::after {
+  position: absolute;
+  bottom: -98px;
+  left: -58px;
+  width: 170px;
+  height: 170px;
+  border: 1px solid rgba(195, 164, 94, 0.25);
+  border-radius: 50% 50% 0 0;
+  content: "";
+  pointer-events: none;
+}
+
+.menu-panel-featured {
+  grid-column: auto;
+  background: var(--green);
+  box-shadow: 0 24px 70px rgba(6, 46, 37, 0.2);
+}
+
+.menu-panel-featured .menu-list {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.menu-panel-featured .menu-item {
+  padding: 23px 0;
+}
+
+.menu-panel-featured .menu-item:first-child {
+  padding-top: 0;
+}
+
+.menu-panel-featured .menu-item h4 {
+  font-size: 1.45rem;
+  letter-spacing: 0.02em;
+}
+
+.menu-panel-featured .menu-item > strong {
+  font-size: 1.1rem;
+}
+
+.menu-panel h3 {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 34px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(195, 164, 94, 0.72);
+  color: var(--green);
+  font-size: clamp(2.15rem, 3.5vw, 3.5rem);
+  letter-spacing: -0.01em;
+}
+
+.menu-panel-featured h3 {
+  color: var(--gold-bright);
+}
+
+.menu-panel h3 small {
+  display: block;
+  margin-top: 9px;
+  color: var(--gold);
+  font-size: 0.27em;
+  letter-spacing: 0.18em;
+}
+
+.menu-kicker {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 12px;
+  letter-spacing: 0.28em;
+}
+
+.menu-item {
+  gap: 32px;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(24, 51, 43, 0.13);
+}
+
+.menu-item h4 {
+  font-size: 1.32rem;
+  letter-spacing: 0.01em;
+}
+
+.menu-item p {
+  max-width: 650px;
+  margin-top: 6px;
+  font-family: var(--display);
+  font-size: 0.88rem;
+  font-style: italic;
+  line-height: 1.48;
+}
+
+.menu-item > strong {
+  padding-top: 2px;
+  font-size: 1.08rem;
+}
+
+.menu-note {
+  position: relative;
+  z-index: 1;
+  max-width: 440px;
+  margin: -12px 0 28px;
+  font-size: 0.9rem;
+}
+
+#crepes-salees {
+  grid-column: 1 / -1;
+}
+
+#crepes-salees .menu-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 52px;
+}
+
+#crepes-sucrees {
+  grid-column: 1 / -1;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 253, 248, 0.96),
+      rgba(242, 231, 211, 0.92)
+    ),
+    var(--cream);
+}
+
+#crepes-sucrees::before {
+  width: 135px;
+  height: 135px;
+  border-color: rgba(195, 164, 94, 0.5);
+  border-radius: 50% 50% 0 0;
+}
+
+#crepes-sucrees .menu-list {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0 22px;
+}
+
+#crepes-sucrees .menu-item {
+  display: block;
+  min-height: 148px;
+  padding: 17px 4px 18px;
+  border-bottom: 0;
+  border-top: 1px solid rgba(195, 164, 94, 0.3);
+}
+
+#crepes-sucrees .menu-item > strong {
+  display: block;
+  margin-top: 17px;
+  color: var(--green);
+  font-size: 1.05rem;
+}
+
+#crepes-sucrees .menu-item h4 {
+  font-size: 1.18rem;
+}
+
+#crepes-sucrees .menu-item p {
+  font-size: 0.78rem;
+}
+
+#smoothies {
+  grid-column: auto;
+}
+
+#smoothies .menu-title-row h3 {
+  margin-bottom: 0;
+}
+
+.menu-title-row span {
+  font-size: 0.74rem;
+  letter-spacing: 0.22em;
+}
+
+.menu-panel-wide {
+  grid-column: 1 / -1;
+  background: var(--green-deep);
+  color: var(--white);
+}
+
+.menu-panel-wide h3 {
+  color: var(--gold-bright);
+}
+
+.menu-panel-wide .menu-item {
+  border-color: rgba(215, 188, 120, 0.2);
+}
+
+.menu-panel-wide .menu-item h4 {
+  color: var(--white);
+  font-size: 1.12rem;
+}
+
+.menu-panel-wide .menu-item > strong {
+  color: var(--gold-bright);
+}
+
+.menu-panel-wide .drink-columns {
+  gap: clamp(58px, 10vw, 150px);
+}
+
+.menu-panel-wide .menu-list.compact .menu-item {
+  padding: 14px 0;
+}
+
+.menu-panel-wide .menu-panel::after,
+.menu-panel-wide::after {
+  border-color: rgba(215, 188, 120, 0.22);
+}
+
+@media (max-width: 900px) {
+  .full-menu {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-panel-featured,
+  #crepes-salees,
+  #crepes-sucrees,
+  .menu-panel-wide {
+    grid-column: auto;
+  }
+
+  #crepes-salees .menu-list,
+  #crepes-sucrees .menu-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-preview {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+
+  .menu-preview::before {
+    top: 36px;
+    right: 20px;
+    left: 20px;
+  }
+
+  .menu-jump {
+    width: 100%;
+    margin-bottom: 38px;
+    overflow-x: auto;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    scrollbar-width: thin;
+  }
+
+  .menu-jump a {
+    flex: 0 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .menu-panel {
+    padding: 30px 22px;
+  }
+
+  #crepes-salees .menu-list,
+  #crepes-sucrees .menu-list {
+    grid-template-columns: 1fr;
+  }
+
+  #crepes-sucrees .menu-item {
+    min-height: 0;
+    padding: 18px 0;
+    border-top: 1px solid rgba(195, 164, 94, 0.3);
+  }
+
+  #crepes-sucrees .menu-item > strong {
+    margin-top: 8px;
+  }
+
+  .menu-panel-wide .drink-columns {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+}
