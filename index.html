@@ -5,374 +5,348 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Arcs Café, café et délices faits maison au cœur de Lyon."
+      content="Arcs Café à Lyon 1er : galettes de sarrasin, gaufres salées, délices sucrés, smoothies et boissons maison."
     />
-    <title>Arcs Café — Café & Délices à Lyon</title>
+    <meta name="theme-color" content="#1d4939" />
+    <title>Arcs Café - Café &amp; Délices à Lyon 1er</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,ital,wght@6..96,400;6..96,500;6..96,600;6..96,700;6..96,400i;6..96,500i&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&amp;display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
     <header class="site-header">
       <a class="wordmark" href="#accueil" aria-label="Arcs Café, accueil">
-        <span>ARCS</span><b>CAFÉ</b><small>LYON</small>
+        <span>ARCS</span><strong>CAFÉ</strong>
       </a>
       <nav class="site-nav" aria-label="Navigation principale">
         <a href="#univers">Les univers</a>
+        <a href="#vitrine">La vitrine</a>
         <a href="#carte">La carte</a>
         <a href="#adresse">Nous trouver</a>
       </nav>
-      <a class="nav-action" href="#carte">Voir le menu <span>↓</span></a>
+      <a class="header-button" href="#carte">Voir le menu <span>↘</span></a>
     </header>
 
-    <main>
+    <main id="contenu">
       <section class="hero" id="accueil">
-        <div class="hero-copy">
-          <p class="eyebrow">Café · Délices · Fait maison</p>
-          <h1>Une pause<br /><em>qui a du goût.</em></h1>
-          <p class="hero-lead">
+        <div class="hero-content">
+          <p class="overline">19 rue Terme · Lyon 1er</p>
+          <h1>Le goût d’une<br /><em>vraie pause.</em></h1>
+          <p class="hero-intro">
             Gaufres salées, galettes de sarrasin, délices sucrés et boissons
-            maison : quatre univers à savourer au cœur de Lyon.
+            maison. Une adresse à savourer du matin au soir.
           </p>
-          <div class="hero-links">
-            <a class="button" href="#carte">Découvrir la carte</a>
-            <span>19 rue Terme · Lyon 1er</span>
+          <div class="hero-actions">
+            <a class="button button--gold" href="#carte">Découvrir la carte</a>
+            <a class="quiet-link" href="#adresse">Nous rendre visite <span>→</span></a>
+          </div>
+          <div class="hero-details">
+            <div><span>01</span><strong>Fait maison</strong></div>
+            <div><span>02</span><strong>Ouvert 8h - 20h</strong></div>
+            <div><span>03</span><strong>À Lyon 1er</strong></div>
           </div>
         </div>
-        <div class="hero-images" aria-label="Créations Arcs Café">
-          <figure class="hero-arch hero-arch-main">
-            <img src="images/gaufre-falafel.png" alt="Gaufre salée Arcs Café" />
-          </figure>
-          <figure class="hero-arch hero-arch-small">
+
+        <div class="hero-gallery" aria-label="Les créations d'Arcs Café">
+          <figure class="hero-main-image">
             <img
-              src="images/crepe-salee.png"
-              alt="Galette de sarrasin Arcs Café"
+              src="images/gaufre-falafel.png"
+              alt="Gaufre salée aux herbes avec salade fraîche"
             />
           </figure>
-          <div class="hero-seal">
-            <span>100 %</span><strong>fait<br />maison</strong><i>✦</i>
+          <figure class="hero-small-image">
+            <img
+              src="images/crepe-salee.png"
+              alt="Galette de sarrasin aux champignons et œuf"
+            />
+          </figure>
+          <div class="hero-card">
+            <span>La spécialité</span>
+            <strong>Des recettes<br />préparées à la minute.</strong>
           </div>
-          <p class="hero-side-note">Du matin<br />au soir</p>
+          <p class="hero-stamp">ARCS CAFÉ<br /><i>FAIT MAISON</i></p>
         </div>
       </section>
 
-      <section class="univers" id="univers">
-        <div class="section-top">
+      <section class="intro-band" aria-label="Les spécialités Arcs Café">
+        <p>Galettes de sarrasin <i>✦</i> Gaufres salées <i>✦</i> Délices sucrés <i>✦</i> Boissons maison</p>
+      </section>
+
+      <section class="univers layout" id="univers">
+        <div class="title-row">
           <div>
-            <p class="eyebrow">L’expérience Arcs Café</p>
-            <h2>Quatre univers,<br /><em>une même envie.</em></h2>
+            <p class="overline">Arcs Café en quatre temps</p>
+            <h2>Quatre univers,<br /><em>une même gourmandise.</em></h2>
           </div>
           <p>
-            Une carte généreuse, préparée à la minute et pensée pour tous les
-            moments de la journée.
+            Une cuisine généreuse, facile à aimer, pour un déjeuner, un goûter
+            ou une pause autour d’un café.
           </p>
         </div>
-        <div class="universe-list">
-          <a href="#galettes" class="universe-item"
-            ><span>01</span><strong>Galettes<br /><em>salées</em></strong
-            ><small>Au sarrasin</small></a
-          >
-          <a href="#gaufres" class="universe-item"
-            ><span>02</span><strong>Gaufres<br /><em>salées</em></strong
-            ><small>Nos créations maison</small></a
-          >
-          <a href="#delices" class="universe-item"
-            ><span>03</span><strong>Délices<br /><em>sucrés</em></strong
-            ><small>Crêpe ou gaufre</small></a
-          >
-          <a href="#tasse" class="universe-item"
-            ><span>04</span><strong>Côté<br /><em>tasse</em></strong
-            ><small>Café et fraîcheur</small></a
-          >
+
+        <div class="universe-grid">
+          <a class="universe-card universe-card--wide" href="#gaufres">
+            <img src="images/gaufre-falafel.png" alt="Gaufre salée maison" />
+            <span class="card-number">01</span>
+            <div class="card-copy">
+              <p>Nos créations salées</p>
+              <h3>Gaufres<br /><em>salées</em></h3>
+              <span>Découvrir <b>→</b></span>
+            </div>
+          </a>
+
+          <a class="universe-card" href="#galettes">
+            <img src="images/crepe-salee.png" alt="Galette de sarrasin maison" />
+            <span class="card-number">02</span>
+            <div class="card-copy">
+              <p>Au bon goût du sarrasin</p>
+              <h3>Galettes<br /><em>salées</em></h3>
+              <span>Découvrir <b>→</b></span>
+            </div>
+          </a>
+
+          <a class="universe-card" href="#delices">
+            <img
+              src="images/delices-sucres.png"
+              alt="Crêpe aux fraises et gaufre à la pistache"
+            />
+            <span class="card-number">03</span>
+            <div class="card-copy">
+              <p>Crêpe ou gaufre au choix</p>
+              <h3>Délices<br /><em>sucrés</em></h3>
+              <span>Découvrir <b>→</b></span>
+            </div>
+          </a>
+
+          <a class="universe-card universe-card--wide" href="#boissons">
+            <img
+              src="images/boisson-maison.png"
+              alt="Boisson maison au citron et à la menthe"
+            />
+            <span class="card-number">04</span>
+            <div class="card-copy">
+              <p>Fraîcheur ou réconfort</p>
+              <h3>Boissons<br /><em>maison</em></h3>
+              <span>Découvrir <b>→</b></span>
+            </div>
+          </a>
         </div>
       </section>
 
-      <section class="menu-section" id="carte">
-        <div class="menu-heading">
-          <p class="eyebrow">La carte Arcs Café</p>
-          <h2>À table.</h2>
-          <p>100 % fait maison, du début à la fin.</p>
+      <section class="vitrine" id="vitrine">
+        <div class="vitrine-picture">
+          <img
+            src="images/vitrine-gourmande.png"
+            alt="Vitrine avec desserts, sandwichs et bowls du jour"
+          />
         </div>
-
-        <div class="menu-board">
-          <aside class="menu-aside">
-            <div class="aside-stamp"><span>ARCS</span><b>CAFÉ</b><i>✦</i></div>
-            <p class="aside-title">100 %<br /><em>fait maison</em></p>
-            <figure>
-              <img
-                src="images/crepe-salee.png"
-                alt="Galette de sarrasin maison"
-              />
-            </figure>
-            <figure>
-              <img src="images/gaufre-falafel.png" alt="Gaufre salée maison" />
-            </figure>
-            <p class="aside-note">
-              Des recettes généreuses,<br />préparées avec soin.
-            </p>
-          </aside>
-
-          <div class="menu-grid">
-            <section class="menu-category" id="galettes">
-              <div class="category-heading">
-                <h3>Galettes salées</h3>
-                <p>Accompagnées d’une salade composée</p>
-              </div>
-              <article class="menu-dish">
-                <div>
-                  <h4>Classique</h4>
-                  <p>Galette de sarrasin, 2 œufs, emmental et jambon.</p>
-                </div>
-                <b>9,50 €</b>
-              </article>
-              <article class="menu-dish">
-                <div>
-                  <h4>Forestière</h4>
-                  <p>
-                    Galette de sarrasin, 2 œufs, champignons, ciboulette et
-                    persil.
-                  </p>
-                </div>
-                <b>9,30 €</b>
-              </article>
-              <article class="menu-dish">
-                <div>
-                  <h4>Florentine</h4>
-                  <p>Galette de sarrasin, 2 œufs, épinards et feta.</p>
-                </div>
-                <b>8,50 €</b>
-              </article>
-              <article class="menu-dish">
-                <div>
-                  <h4>Alice</h4>
-                  <p>
-                    Galette de sarrasin, saumon fumé, fromage frais et
-                    ciboulette.
-                  </p>
-                </div>
-                <b>10,30 €</b>
-              </article>
-              <article class="menu-dish">
-                <div>
-                  <h4>Méditerranéenne</h4>
-                  <p>
-                    Galette de sarrasin, viande de bœuf hachée, oignons,
-                    poivrons et tomates.
-                  </p>
-                </div>
-                <b>9,40 €</b>
-              </article>
-            </section>
-
-            <section class="menu-category" id="delices">
-              <div class="category-heading">
-                <h3>Délices <small>(crêpe ou gaufre)</small></h3>
-              </div>
-              <article class="menu-dish">
-                <div>
-                  <h4>Sucre</h4>
-                  <p>Sucre ou citron.</p>
-                </div>
-                <b>4,20 €</b>
-              </article>
-              <article class="menu-dish">
-                <div>
-                  <h4>Douceur</h4>
-                  <p>
-                    Coulis au choix : chocolat, chocolat-noisette, caramel,
-                    fruits rouges ou pistache.
-                  </p>
-                </div>
-                <b>5,00 €</b>
-              </article>
-              <article class="menu-dish">
-                <div>
-                  <h4>Fruits frais</h4>
-                  <p>
-                    Assortiment de fruits frais de saison et coulis
-                    chocolat-noisette.
-                  </p>
-                </div>
-                <b>7,00 €</b>
-              </article>
-              <article class="menu-dish">
-                <div>
-                  <h4>Nuage fruité</h4>
-                  <p>Fraises, banane, chantilly et coulis chocolat-noisette.</p>
-                </div>
-                <b>8,30 €</b>
-              </article>
-              <article class="menu-dish">
-                <div>
-                  <h4>La Pistachée</h4>
-                  <p>
-                    Crème de halawa au sésame, banane, éclats de pistaches et
-                    coulis de pistache.
-                  </p>
-                </div>
-                <b>9,50 €</b>
-              </article>
-            </section>
-
-            <section class="menu-category compact-category" id="tasse">
-              <div class="category-heading"><h3>Côté tasse</h3></div>
-              <div class="compact-list">
-                <p><span>Espresso</span><b>2,00 €</b></p>
-                <p><span>Macchiato</span><b>2,20 €</b></p>
-                <p><span>Latte</span><b>3,20 €</b></p>
-                <p><span>Mocha</span><b>3,50 €</b></p>
-                <p><span>Cappuccino</span><b>3,50 €</b></p>
-                <p><span>Americano</span><b>2,30 €</b></p>
-                <p><span>Matcha</span><b>4,80 €</b></p>
-                <p><span>Chocolat chaud</span><b>4,00 €</b></p>
-                <p><span>Thé maison</span><b>3,00 €</b></p>
-              </div>
-            </section>
-
-            <section class="menu-category" id="gaufres">
-              <div class="category-heading">
-                <h3>Gaufres salées</h3>
-                <p>Accompagnées d’une salade composée</p>
-              </div>
-              <article class="menu-dish">
-                <div>
-                  <h4>Signature</h4>
-                  <p>
-                    Gaufre façon falafel, hoummous, cornichons et sauce au
-                    sésame.
-                  </p>
-                </div>
-                <b>9,00 €</b>
-              </article>
-              <article class="menu-dish">
-                <div>
-                  <h4>Teta</h4>
-                  <p>Gaufre aux herbes fraîches, fromage frais et avocat.</p>
-                </div>
-                <b>9,20 €</b>
-              </article>
-              <article class="menu-dish">
-                <div>
-                  <h4>La Poulette</h4>
-                  <p>
-                    Gaufre aux herbes fraîches, avocat, poulet et sauce à l’ail.
-                  </p>
-                </div>
-                <b>9,70 €</b>
-              </article>
-              <article class="menu-dish">
-                <div>
-                  <h4>Nordique</h4>
-                  <p>
-                    Gaufre aux herbes fraîches, saumon fumé, avocat et sauce
-                    citronnée.
-                  </p>
-                </div>
-                <b>10,50 €</b>
-              </article>
-            </section>
-
-            <section class="menu-category" id="smoothies">
-              <div class="category-heading">
-                <h3>Smoothies <small>50 cl</small></h3>
-                <p>À base de jus de pomme, sans sucre ajouté.</p>
-              </div>
-              <article class="menu-dish">
-                <div>
-                  <h4>Les Blues</h4>
-                  <p>Fraises, framboises, myrtilles, mûres et cassis.</p>
-                </div>
-                <b>5,90 €</b>
-              </article>
-              <article class="menu-dish">
-                <div>
-                  <h4>Green</h4>
-                  <p>Kiwi et ananas.</p>
-                </div>
-                <b>7,20 €</b>
-              </article>
-              <article class="menu-dish">
-                <div>
-                  <h4>Tropicale</h4>
-                  <p>Mangue, ananas, banane.</p>
-                </div>
-                <b>6,30 €</b>
-              </article>
-              <article class="menu-dish">
-                <div>
-                  <h4>Avocado</h4>
-                  <p>Avocat, banane, lait, miel et fruits secs.</p>
-                </div>
-                <b>6,50 €</b>
-              </article>
-            </section>
-
-            <section class="menu-category compact-category" id="fraicheur">
-              <div class="category-heading"><h3>Fraîcheur</h3></div>
-              <div class="compact-list">
-                <p><span>Citronnade</span><b>4,50 €</b></p>
-                <p><span>Thé glacé</span><b>4,50 €</b></p>
-                <p><span>Café glacé</span><b>3,00 €</b></p>
-                <p><span>Mocha glacé</span><b>4,00 €</b></p>
-                <p><span>Chocolat glacé</span><b>4,00 €</b></p>
-                <p><span>Softs</span><b>3,00 €</b></p>
-                <p><span>Jus de fruit</span><b>3,30 €</b></p>
-              </div>
-            </section>
+        <div class="vitrine-copy">
+          <p class="overline">Au comptoir</p>
+          <h2>Les envies<br /><em>du jour.</em></h2>
+          <p>
+            Une vitrine qui évolue tout au long de la journée : desserts
+            gourmands, sandwichs généreux et bowls frais à emporter ou à
+            savourer sur place.
+          </p>
+          <div class="vitrine-list">
+            <span>Desserts maison</span>
+            <span>Sandwichs du jour</span>
+            <span>Bowls frais</span>
           </div>
         </div>
+      </section>
+
+      <section class="menu" id="carte">
+        <div class="menu-heading layout">
+          <div>
+            <p class="overline">La carte Arcs Café</p>
+            <h2>À table.</h2>
+          </div>
+          <p>
+            Des recettes préparées à la minute. Toutes nos galettes et gaufres
+            salées sont accompagnées d’une salade composée.
+          </p>
+        </div>
+
+        <div class="menu-book layout">
+          <section class="menu-sheet" id="galettes">
+            <div class="menu-sheet-title">
+              <span>01</span>
+              <div>
+                <h3>Galettes salées</h3>
+                <p>La tradition du sarrasin.</p>
+              </div>
+            </div>
+            <div class="dish-list">
+              <article class="dish">
+                <div><h4>Classique</h4><p>Galette de sarrasin, 2 œufs, emmental et jambon.</p></div><b>9,50 €</b>
+              </article>
+              <article class="dish">
+                <div><h4>Forestière</h4><p>Galette de sarrasin, 2 œufs, champignons, ciboulette et persil.</p></div><b>9,30 €</b>
+              </article>
+              <article class="dish">
+                <div><h4>Florentine</h4><p>Galette de sarrasin, 2 œufs, épinards et feta.</p></div><b>8,50 €</b>
+              </article>
+              <article class="dish">
+                <div><h4>Alice</h4><p>Galette de sarrasin, saumon fumé, fromage frais et ciboulette.</p></div><b>10,30 €</b>
+              </article>
+              <article class="dish">
+                <div><h4>Méditerranéenne</h4><p>Galette de sarrasin, viande de bœuf hachée, oignons, poivrons et tomates.</p></div><b>9,40 €</b>
+              </article>
+            </div>
+          </section>
+
+          <section class="menu-sheet" id="gaufres">
+            <div class="menu-sheet-title">
+              <span>02</span>
+              <div>
+                <h3>Gaufres salées</h3>
+                <p>Aux herbes fraîches et bien garnies.</p>
+              </div>
+            </div>
+            <div class="dish-list">
+              <article class="dish">
+                <div><h4>Signature</h4><p>Gaufre façon falafel, hoummous, cornichons et sauce au sésame.</p></div><b>9,00 €</b>
+              </article>
+              <article class="dish">
+                <div><h4>Teta</h4><p>Gaufre aux herbes fraîches, fromage frais et avocat.</p></div><b>9,20 €</b>
+              </article>
+              <article class="dish">
+                <div><h4>La Poulette</h4><p>Gaufre aux herbes fraîches, avocat, poulet et sauce à l’ail.</p></div><b>9,70 €</b>
+              </article>
+              <article class="dish">
+                <div><h4>Nordique</h4><p>Gaufre aux herbes fraîches, saumon fumé, avocat et sauce citronnée.</p></div><b>10,50 €</b>
+              </article>
+            </div>
+          </section>
+
+          <section class="menu-sheet menu-sheet--gold" id="delices">
+            <div class="menu-sheet-title">
+              <span>03</span>
+              <div>
+                <h3>Délices <small>crêpe ou gaufre</small></h3>
+                <p>Choisissez votre envie sucrée.</p>
+              </div>
+            </div>
+            <div class="dish-list">
+              <article class="dish">
+                <div><h4>Sucre</h4><p>Sucre ou citron.</p></div><b>4,20 €</b>
+              </article>
+              <article class="dish">
+                <div><h4>Douceur</h4><p>Coulis au choix : chocolat, chocolat-noisette, caramel, fruits rouges ou pistache.</p></div><b>5,00 €</b>
+              </article>
+              <article class="dish">
+                <div><h4>Fruits frais</h4><p>Assortiment de fruits frais de saison et coulis chocolat-noisette.</p></div><b>7,00 €</b>
+              </article>
+              <article class="dish">
+                <div><h4>Nuage fruité</h4><p>Fraises, banane, chantilly et coulis chocolat-noisette.</p></div><b>8,30 €</b>
+              </article>
+              <article class="dish">
+                <div><h4>La Pistachée</h4><p>Crème de halawa au sésame, banane, éclats de pistaches et coulis de pistache.</p></div><b>9,50 €</b>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <div class="drinks layout" id="boissons">
+          <div class="drinks-title">
+            <p class="overline">À boire</p>
+            <h3>Côté<br /><em>tasse.</em></h3>
+            <p>Chaud, glacé, fruité : à chaque moment sa boisson.</p>
+          </div>
+
+          <section class="drink-column">
+            <h4>Côté tasse</h4>
+            <dl>
+              <div><dt>Espresso</dt><dd>2,00 €</dd></div>
+              <div><dt>Macchiato</dt><dd>2,20 €</dd></div>
+              <div><dt>Latte</dt><dd>3,20 €</dd></div>
+              <div><dt>Mocha</dt><dd>3,50 €</dd></div>
+              <div><dt>Cappuccino</dt><dd>3,50 €</dd></div>
+              <div><dt>Americano</dt><dd>2,30 €</dd></div>
+              <div><dt>Matcha</dt><dd>4,80 €</dd></div>
+              <div><dt>Chocolat chaud</dt><dd>4,00 €</dd></div>
+              <div><dt>Thé maison</dt><dd>3,00 €</dd></div>
+            </dl>
+          </section>
+
+          <section class="drink-column">
+            <h4>Smoothies <small>50 cl</small></h4>
+            <p class="drink-note">À base de jus de pomme, sans sucre ajouté.</p>
+            <dl>
+              <div><dt>Les Blues <small>Fraises, framboises, myrtilles, mûres et cassis.</small></dt><dd>5,90 €</dd></div>
+              <div><dt>Green <small>Kiwi et ananas.</small></dt><dd>7,20 €</dd></div>
+              <div><dt>Tropicale <small>Mangue, ananas, banane.</small></dt><dd>6,30 €</dd></div>
+              <div><dt>Avocado <small>Avocat, banane, lait, miel et fruits secs.</small></dt><dd>6,50 €</dd></div>
+            </dl>
+          </section>
+
+          <section class="drink-column">
+            <h4>Fraîcheur</h4>
+            <dl>
+              <div><dt>Citronnade</dt><dd>4,50 €</dd></div>
+              <div><dt>Thé glacé</dt><dd>4,50 €</dd></div>
+              <div><dt>Café glacé</dt><dd>3,00 €</dd></div>
+              <div><dt>Mocha glacé</dt><dd>4,00 €</dd></div>
+              <div><dt>Chocolat glacé</dt><dd>4,00 €</dd></div>
+              <div><dt>Softs</dt><dd>3,00 €</dd></div>
+              <div><dt>Jus de fruit</dt><dd>3,30 €</dd></div>
+            </dl>
+          </section>
+        </div>
+        <p class="menu-footnote layout">Les produits peuvent varier selon la saison et la disponibilité.</p>
       </section>
 
       <section class="events">
-        <p class="eyebrow">Pour vos événements</p>
-        <h2>
-          Salle privatisable.<br /><em
-            >Service traiteur sur place ou à emporter.</em
-          >
-        </h2>
+        <p class="overline">Vos moments chez Arcs Café</p>
+        <h2>Salle privatisable.<br /><em>Service traiteur sur place ou à emporter.</em></h2>
+        <a class="quiet-link quiet-link--light" href="tel:+33707070707">Parlons de votre événement <span>→</span></a>
       </section>
 
       <section class="visit" id="adresse">
-        <div class="visit-copy">
-          <p class="eyebrow">Nous trouver</p>
+        <div class="visit-main">
+          <p class="overline">Nous trouver</p>
           <h2>Venez nous<br /><em>rendre visite.</em></h2>
           <p>
-            Un café, un déjeuner gourmand ou une pause sucrée : Arcs Café vous
-            accueille toute la journée.
+            Pour une pause café, un déjeuner gourmand ou une douceur à emporter,
+            Arcs Café vous accueille tout au long de la journée.
           </p>
-          <dl>
-            <div>
-              <dt>Adresse</dt>
-              <dd>19 rue Terme, Lyon 1er</dd>
-            </div>
-            <div>
-              <dt>Téléphone</dt>
-              <dd><a href="tel:+33707070707">07 07 07 07 07</a></dd>
-            </div>
-            <div>
-              <dt>Horaires</dt>
-              <dd>8h – 20h</dd>
-            </div>
-          </dl>
+          <a
+            class="button button--outline"
+            href="https://www.google.com/maps/search/?api=1&amp;query=19+Rue+Terme+69001+Lyon"
+            target="_blank"
+            rel="noreferrer"
+          >Voir l’itinéraire <span>↗</span></a>
         </div>
-        <div class="visit-art">
-          <div class="visit-art-top">ARCS <span>✦</span> CAFÉ</div>
-          <div class="visit-art-centre">
-            <span>Quatre univers</span
-            ><strong>à savourer<br />toute la journée.</strong>
+
+        <div class="visit-card">
+          <div>
+            <span>Adresse</span>
+            <strong>19 rue Terme,<br />Lyon 1er</strong>
           </div>
-          <div class="visit-art-bottom">
-            <span>Galettes</span><span>Gaufres</span><span>Délices</span
-            ><span>Côté tasse</span>
+          <div>
+            <span>Téléphone</span>
+            <strong><a href="tel:+33707070707">07 07 07 07 07</a></strong>
           </div>
-          <div class="visit-arches"><i></i><i></i><i></i><i></i></div>
+          <div>
+            <span>Horaires d’ouverture</span>
+            <strong>8h - 20h</strong>
+          </div>
+          <p>À bientôt chez Arcs Café.</p>
         </div>
       </section>
     </main>
 
     <footer>
-      <a class="wordmark" href="#accueil"
-        ><span>ARCS</span><b>CAFÉ</b><small>LYON</small></a
-      >
-      <p>© 2026 Arcs Café · Café &amp; Délices</p>
+      <a class="wordmark wordmark--footer" href="#accueil"><span>ARCS</span><strong>CAFÉ</strong></a>
+      <p>© 2026 Arcs Café · Lyon 1er</p>
+      <a href="#accueil">Retour en haut ↑</a>
     </footer>
   </body>
 </html>
