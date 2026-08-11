@@ -8,7 +8,7 @@
       content="Arcs Café à Lyon 1er : galettes de sarrasin, gaufres salées, délices sucrés, smoothies et boissons maison."
     />
     <meta name="theme-color" content="#1d4939" />
-    <title>Arcs Café - Café &amp; Délices à Lyon 1er</title>
+    <title>Arcs Café | Lyon 1er</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,10 +27,10 @@
       <nav class="site-nav" aria-label="Navigation principale">
         <a href="#univers">Les univers</a>
         <a href="#vitrine">La vitrine</a>
-        <a href="#carte">La carte</a>
+        <a href="menu.html">La carte</a>
         <a href="#adresse">Nous trouver</a>
       </nav>
-      <a class="header-button" href="#carte">Voir le menu <span>↘</span></a>
+      <a class="header-button" href="menu.html">Voir le menu <span>↘</span></a>
     </header>
 
     <main id="contenu">
@@ -43,7 +43,7 @@
             maison. Une adresse à savourer du matin au soir.
           </p>
           <div class="hero-actions">
-            <a class="button button--gold" href="#carte">Découvrir la carte</a>
+            <a class="button button--gold" href="menu.html">Découvrir la carte</a>
             <a class="quiet-link" href="#adresse">Nous rendre visite <span>→</span></a>
           </div>
           <div class="hero-details">
@@ -91,7 +91,7 @@
         </div>
 
         <div class="universe-grid">
-          <a class="universe-card universe-card--wide" href="#gaufres">
+          <a class="universe-card universe-card--wide" href="menu.html#gaufres">
             <img src="images/gaufre-falafel.png" alt="Gaufre salée maison" />
             <span class="card-number">01</span>
             <div class="card-copy">
@@ -101,7 +101,7 @@
             </div>
           </a>
 
-          <a class="universe-card" href="#galettes">
+          <a class="universe-card" href="menu.html#galettes">
             <img src="images/crepe-salee.png" alt="Galette de sarrasin maison" />
             <span class="card-number">02</span>
             <div class="card-copy">
@@ -111,7 +111,7 @@
             </div>
           </a>
 
-          <a class="universe-card" href="#delices">
+          <a class="universe-card" href="menu.html#delices">
             <img
               src="images/delices-sucres.png"
               alt="Crêpe aux fraises et gaufre à la pistache"
@@ -124,7 +124,7 @@
             </div>
           </a>
 
-          <a class="universe-card universe-card--wide" href="#boissons">
+          <a class="universe-card universe-card--wide" href="menu.html#boissons">
             <img
               src="images/boisson-maison.png"
               alt="Boisson maison au citron et à la menthe"
@@ -162,145 +162,50 @@
         </div>
       </section>
 
-      <section class="menu" id="carte">
-        <div class="menu-heading layout">
-          <div>
-            <p class="overline">La carte Arcs Café</p>
-            <h2>À table.</h2>
+      <section class="menu-preview" id="carte">
+        <div class="layout">
+          <div class="menu-preview__lead">
+            <div>
+              <p class="overline">La carte Arcs Café</p>
+              <h2>Choisir son<br /><em>envie.</em></h2>
+            </div>
+            <div class="menu-preview__intro">
+              <p>
+                Une carte pensée pour être consultée facilement à table, sur
+                téléphone comme sur ordinateur.
+              </p>
+              <a class="button button--gold" href="menu.html">Ouvrir la carte <span>↗</span></a>
+            </div>
           </div>
-          <p>
-            Des recettes préparées à la minute. Toutes nos galettes et gaufres
-            salées sont accompagnées d’une salade composée.
-          </p>
-        </div>
 
-        <div class="menu-book layout">
-          <section class="menu-sheet" id="galettes">
-            <div class="menu-sheet-title">
+          <div class="menu-preview__grid">
+            <a class="menu-preview-card" href="menu.html#galettes">
               <span>01</span>
-              <div>
-                <h3>Galettes salées</h3>
-                <p>La tradition du sarrasin.</p>
-              </div>
-            </div>
-            <div class="dish-list">
-              <article class="dish">
-                <div><h4>Classique</h4><p>Galette de sarrasin, 2 œufs, emmental et jambon.</p></div><b>9,50 €</b>
-              </article>
-              <article class="dish">
-                <div><h4>Forestière</h4><p>Galette de sarrasin, 2 œufs, champignons, ciboulette et persil.</p></div><b>9,30 €</b>
-              </article>
-              <article class="dish">
-                <div><h4>Florentine</h4><p>Galette de sarrasin, 2 œufs, épinards et feta.</p></div><b>8,50 €</b>
-              </article>
-              <article class="dish">
-                <div><h4>Alice</h4><p>Galette de sarrasin, saumon fumé, fromage frais et ciboulette.</p></div><b>10,30 €</b>
-              </article>
-              <article class="dish">
-                <div><h4>Méditerranéenne</h4><p>Galette de sarrasin, viande de bœuf hachée, oignons, poivrons et tomates.</p></div><b>9,40 €</b>
-              </article>
-            </div>
-          </section>
-
-          <section class="menu-sheet" id="gaufres">
-            <div class="menu-sheet-title">
+              <h3>Galettes<br /><em>salées</em></h3>
+              <p>La tradition du sarrasin.</p>
+              <b>5 recettes <i>→</i></b>
+            </a>
+            <a class="menu-preview-card menu-preview-card--green" href="menu.html#gaufres">
               <span>02</span>
-              <div>
-                <h3>Gaufres salées</h3>
-                <p>Aux herbes fraîches et bien garnies.</p>
-              </div>
-            </div>
-            <div class="dish-list">
-              <article class="dish">
-                <div><h4>Signature</h4><p>Gaufre façon falafel, hoummous, cornichons et sauce au sésame.</p></div><b>9,00 €</b>
-              </article>
-              <article class="dish">
-                <div><h4>Teta</h4><p>Gaufre aux herbes fraîches, fromage frais et avocat.</p></div><b>9,20 €</b>
-              </article>
-              <article class="dish">
-                <div><h4>La Poulette</h4><p>Gaufre aux herbes fraîches, avocat, poulet et sauce à l’ail.</p></div><b>9,70 €</b>
-              </article>
-              <article class="dish">
-                <div><h4>Nordique</h4><p>Gaufre aux herbes fraîches, saumon fumé, avocat et sauce citronnée.</p></div><b>10,50 €</b>
-              </article>
-            </div>
-          </section>
-
-          <section class="menu-sheet menu-sheet--gold" id="delices">
-            <div class="menu-sheet-title">
+              <h3>Gaufres<br /><em>salées</em></h3>
+              <p>Aux herbes fraîches et bien garnies.</p>
+              <b>4 recettes <i>→</i></b>
+            </a>
+            <a class="menu-preview-card menu-preview-card--gold" href="menu.html#delices">
               <span>03</span>
-              <div>
-                <h3>Délices <small>crêpe ou gaufre</small></h3>
-                <p>Choisissez votre envie sucrée.</p>
-              </div>
-            </div>
-            <div class="dish-list">
-              <article class="dish">
-                <div><h4>Sucre</h4><p>Sucre ou citron.</p></div><b>4,20 €</b>
-              </article>
-              <article class="dish">
-                <div><h4>Douceur</h4><p>Coulis au choix : chocolat, chocolat-noisette, caramel, fruits rouges ou pistache.</p></div><b>5,00 €</b>
-              </article>
-              <article class="dish">
-                <div><h4>Fruits frais</h4><p>Assortiment de fruits frais de saison et coulis chocolat-noisette.</p></div><b>7,00 €</b>
-              </article>
-              <article class="dish">
-                <div><h4>Nuage fruité</h4><p>Fraises, banane, chantilly et coulis chocolat-noisette.</p></div><b>8,30 €</b>
-              </article>
-              <article class="dish">
-                <div><h4>La Pistachée</h4><p>Crème de halawa au sésame, banane, éclats de pistaches et coulis de pistache.</p></div><b>9,50 €</b>
-              </article>
-            </div>
-          </section>
-        </div>
-
-        <div class="drinks layout" id="boissons">
-          <div class="drinks-title">
-            <p class="overline">À boire</p>
-            <h3>Côté<br /><em>tasse.</em></h3>
-            <p>Chaud, glacé, fruité : à chaque moment sa boisson.</p>
+              <h3>Délices<br /><em>sucrés</em></h3>
+              <p>En crêpe ou en gaufre.</p>
+              <b>5 recettes <i>→</i></b>
+            </a>
+            <a class="menu-preview-card menu-preview-card--dark" href="menu.html#boissons">
+              <span>04</span>
+              <h3>Boissons<br /><em>maison</em></h3>
+              <p>Chaud, glacé ou fruité.</p>
+              <b>Voir la sélection <i>→</i></b>
+            </a>
           </div>
-
-          <section class="drink-column">
-            <h4>Côté tasse</h4>
-            <dl>
-              <div><dt>Espresso</dt><dd>2,00 €</dd></div>
-              <div><dt>Macchiato</dt><dd>2,20 €</dd></div>
-              <div><dt>Latte</dt><dd>3,20 €</dd></div>
-              <div><dt>Mocha</dt><dd>3,50 €</dd></div>
-              <div><dt>Cappuccino</dt><dd>3,50 €</dd></div>
-              <div><dt>Americano</dt><dd>2,30 €</dd></div>
-              <div><dt>Matcha</dt><dd>4,80 €</dd></div>
-              <div><dt>Chocolat chaud</dt><dd>4,00 €</dd></div>
-              <div><dt>Thé maison</dt><dd>3,00 €</dd></div>
-            </dl>
-          </section>
-
-          <section class="drink-column">
-            <h4>Smoothies <small>50 cl</small></h4>
-            <p class="drink-note">À base de jus de pomme, sans sucre ajouté.</p>
-            <dl>
-              <div><dt>Les Blues <small>Fraises, framboises, myrtilles, mûres et cassis.</small></dt><dd>5,90 €</dd></div>
-              <div><dt>Green <small>Kiwi et ananas.</small></dt><dd>7,20 €</dd></div>
-              <div><dt>Tropicale <small>Mangue, ananas, banane.</small></dt><dd>6,30 €</dd></div>
-              <div><dt>Avocado <small>Avocat, banane, lait, miel et fruits secs.</small></dt><dd>6,50 €</dd></div>
-            </dl>
-          </section>
-
-          <section class="drink-column">
-            <h4>Fraîcheur</h4>
-            <dl>
-              <div><dt>Citronnade</dt><dd>4,50 €</dd></div>
-              <div><dt>Thé glacé</dt><dd>4,50 €</dd></div>
-              <div><dt>Café glacé</dt><dd>3,00 €</dd></div>
-              <div><dt>Mocha glacé</dt><dd>4,00 €</dd></div>
-              <div><dt>Chocolat glacé</dt><dd>4,00 €</dd></div>
-              <div><dt>Softs</dt><dd>3,00 €</dd></div>
-              <div><dt>Jus de fruit</dt><dd>3,30 €</dd></div>
-            </dl>
-          </section>
+          <p class="menu-preview__note">Toutes nos galettes et gaufres salées sont accompagnées d’une salade composée.</p>
         </div>
-        <p class="menu-footnote layout">Les produits peuvent varier selon la saison et la disponibilité.</p>
       </section>
 
       <section class="events">
