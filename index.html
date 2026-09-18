@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Arcs Café à Lyon 1er : galettes de sarrasin, gaufres salées, délices sucrés, smoothies et boissons maison."
+      content="Arcs Café à Lyon 1er : brunch le week-end, galettes de sarrasin, gaufres salées, délices sucrés et boissons maison."
     />
-    <meta name="theme-color" content="#1d4939" />
-    <title>Arcs Café | Lyon 1er</title>
+    <meta name="theme-color" content="#163e31" />
+    <meta name="color-scheme" content="light" />
+    <title>Arcs Café | Brunch, galettes & délices à Lyon 1er</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23163e31'/%3E%3Cpath d='M14 48V31a18 18 0 0 1 36 0v17M23 48V32a9 9 0 0 1 18 0v16' fill='none' stroke='%23d5ae5a' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,233 +31,206 @@
         <span>ARCS</span><strong>CAFÉ</strong>
       </a>
       <nav class="site-nav" aria-label="Navigation principale">
+        <a href="#brunch">Le brunch</a>
         <a href="#univers">Les univers</a>
         <a href="#vitrine">La vitrine</a>
-        <a href="menu.html">La carte</a>
-        <a href="#adresse">Nous trouver</a>
+        <a href="#contact">Nous trouver</a>
       </nav>
-      <a class="header-button" href="menu.html">Voir le menu <span>↘</span></a>
+      <a class="header-cta" href="menu.html">La carte <span aria-hidden="true">↘</span></a>
     </header>
 
     <main id="contenu">
-      <section class="hero" id="accueil">
-        <div class="hero-content">
-          <p class="overline">19 rue Terme · Lyon 1er</p>
-          <h1>Le goût d’une<br /><em>vraie pause.</em></h1>
-          <p class="hero-intro">
-            Gaufres salées, galettes de sarrasin, délices sucrés et boissons
-            maison. Une adresse à savourer du matin au soir.
-          </p>
-          <div class="hero-actions">
-            <a class="button button--gold" href="menu.html">Découvrir la carte</a>
-            <a class="quiet-link" href="#adresse">Nous rendre visite <span>→</span></a>
+      <section class="hero" id="accueil" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <img src="images/gaufre-falafel.png" alt="" />
+        </div>
+        <div class="hero-shell">
+          <div class="hero-copy">
+            <p class="eyebrow eyebrow--light">19 rue Terme · Lyon 1er</p>
+            <h1 id="hero-title">Des matins qui durent.<br /><em>Des envies qui se savourent.</em></h1>
+            <p class="hero-text">
+              Brunch le week-end, galettes de sarrasin, gaufres salées,
+              délices sucrés et boissons maison : une table faite pour prendre
+              le temps.
+            </p>
+            <div class="hero-actions">
+              <a class="button button--gold" href="menu.html">Découvrir la carte <span aria-hidden="true">↗</span></a>
+              <a class="button button--ghost" href="#brunch">Le brunch <span aria-hidden="true">↓</span></a>
+            </div>
           </div>
-          <div class="hero-details">
-            <div><span>01</span><strong>Fait maison</strong></div>
-            <div><span>02</span><strong>Ouvert 8h - 20h</strong></div>
-            <div><span>03</span><strong>À Lyon 1er</strong></div>
+
+          <div class="hero-meta" aria-label="Les essentiels Arcs Café">
+            <div><span>01</span><strong>Brunch le week-end</strong></div>
+            <div><span>02</span><strong>Préparé à la minute</strong></div>
+            <div><span>03</span><strong>Ouvert de 8 h à 20 h</strong></div>
           </div>
         </div>
+        <p class="hero-side-note">ARCS CAFÉ · BRUNCH &amp; PAUSES GOURMANDES</p>
+      </section>
 
-        <div class="hero-gallery" aria-label="Les créations d'Arcs Café">
-          <figure class="hero-main-image">
-            <img
-              src="images/gaufre-falafel.png"
-              alt="Gaufre salée aux herbes avec salade fraîche"
-            />
-          </figure>
-          <figure class="hero-small-image">
-            <img
-              src="images/crepe-salee.png"
-              alt="Galette de sarrasin aux champignons et œuf"
-            />
-          </figure>
-          <div class="hero-card">
-            <span>La spécialité</span>
-            <strong>Des recettes<br />préparées à la minute.</strong>
+      <section class="brunch" id="brunch" aria-labelledby="brunch-title">
+        <div class="section-shell brunch-grid">
+          <div class="brunch-lead">
+            <p class="eyebrow">Le rendez-vous du week-end</p>
+            <h2 id="brunch-title">Le brunch,<br /><em>sans se presser.</em></h2>
+            <p>
+              Le samedi et le dimanche, on se retrouve autour d'une table
+              généreuse : une création salée préparée à la minute, une douceur
+              à choisir et une belle boisson pour prolonger le moment.
+            </p>
+            <a class="text-link" href="menu.html#brunch">Découvrir l'esprit brunch <span aria-hidden="true">→</span></a>
           </div>
-          <p class="hero-stamp">ARCS CAFÉ<br /><i>FAIT MAISON</i></p>
+
+          <div class="brunch-mosaic" aria-label="Une sélection pour le brunch Arcs Café">
+            <figure class="brunch-photo brunch-photo--salty">
+              <img src="images/crepe-salee.png" alt="Galette de sarrasin aux champignons et œuf" loading="lazy" />
+            </figure>
+            <figure class="brunch-photo brunch-photo--sweet">
+              <img src="images/delices-sucres.png" alt="Crêpe aux fraises et gaufre garnie de pistache" loading="lazy" />
+            </figure>
+            <div class="brunch-card">
+              <p>À composer</p>
+              <strong>Salé<br />Douceur<br />Boisson</strong>
+              <span>Samedi &amp; dimanche</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="intro-band" aria-label="Les spécialités Arcs Café">
-        <p>Galettes de sarrasin <i>✦</i> Gaufres salées <i>✦</i> Délices sucrés <i>✦</i> Boissons maison</p>
-      </section>
-
-      <section class="univers layout" id="univers">
-        <div class="title-row">
-          <div>
-            <p class="overline">Arcs Café en quatre temps</p>
-            <h2>Quatre univers,<br /><em>une même gourmandise.</em></h2>
+      <section class="univers" id="univers" aria-labelledby="univers-title">
+        <div class="section-shell">
+          <div class="section-heading section-heading--split">
+            <div>
+              <p class="eyebrow">À chaque moment son envie</p>
+              <h2 id="univers-title">Quatre<br /><em>univers.</em></h2>
+            </div>
+            <p class="section-intro">
+              Du premier café à la douceur de l'après-midi, tout est pensé pour
+              s'attabler, partager ou emporter une pause qui fait plaisir.
+            </p>
           </div>
-          <p>
-            Une cuisine généreuse, facile à aimer, pour un déjeuner, un goûter
-            ou une pause autour d’un café.
-          </p>
-        </div>
 
-        <div class="universe-grid">
-          <a class="universe-card universe-card--wide" href="menu.html#gaufres">
-            <img src="images/gaufre-falafel.png" alt="Gaufre salée maison" />
-            <span class="card-number">01</span>
-            <div class="card-copy">
-              <p>Nos créations salées</p>
-              <h3>Gaufres<br /><em>salées</em></h3>
-              <span>Découvrir <b>→</b></span>
-            </div>
-          </a>
-
-          <a class="universe-card" href="menu.html#galettes">
-            <img src="images/crepe-salee.png" alt="Galette de sarrasin maison" />
-            <span class="card-number">02</span>
-            <div class="card-copy">
-              <p>Au bon goût du sarrasin</p>
-              <h3>Galettes<br /><em>salées</em></h3>
-              <span>Découvrir <b>→</b></span>
-            </div>
-          </a>
-
-          <a class="universe-card" href="menu.html#delices">
-            <img
-              src="images/delices-sucres.png"
-              alt="Crêpe aux fraises et gaufre à la pistache"
-            />
-            <span class="card-number">03</span>
-            <div class="card-copy">
-              <p>Crêpe ou gaufre au choix</p>
-              <h3>Délices<br /><em>sucrés</em></h3>
-              <span>Découvrir <b>→</b></span>
-            </div>
-          </a>
-
-          <a class="universe-card universe-card--wide" href="menu.html#boissons">
-            <img
-              src="images/boisson-maison.png"
-              alt="Boisson maison au citron et à la menthe"
-            />
-            <span class="card-number">04</span>
-            <div class="card-copy">
-              <p>Fraîcheur ou réconfort</p>
-              <h3>Boissons<br /><em>maison</em></h3>
-              <span>Découvrir <b>→</b></span>
-            </div>
-          </a>
+          <div class="universe-grid">
+            <a class="universe-card universe-card--large" href="menu.html#galettes">
+              <img src="images/crepe-salee.png" alt="Galette de sarrasin maison" loading="lazy" />
+              <span class="universe-index">01</span>
+              <div class="universe-copy">
+                <p>La tradition du sarrasin</p>
+                <h3>Galettes<br /><em>salées</em></h3>
+                <span>Voir la carte <b aria-hidden="true">→</b></span>
+              </div>
+            </a>
+            <a class="universe-card" href="menu.html#gaufres">
+              <img src="images/gaufre-falafel.png" alt="Gaufre salée aux herbes fraîches" loading="lazy" />
+              <span class="universe-index">02</span>
+              <div class="universe-copy">
+                <p>Des recettes bien garnies</p>
+                <h3>Gaufres<br /><em>salées</em></h3>
+                <span>Voir la carte <b aria-hidden="true">→</b></span>
+              </div>
+            </a>
+            <a class="universe-card" href="menu.html#delices">
+              <img src="images/delices-sucres.png" alt="Crêpe et gaufre sucrées gourmandes" loading="lazy" />
+              <span class="universe-index">03</span>
+              <div class="universe-copy">
+                <p>Crêpe ou gaufre au choix</p>
+                <h3>Délices<br /><em>sucrés</em></h3>
+                <span>Voir la carte <b aria-hidden="true">→</b></span>
+              </div>
+            </a>
+            <a class="universe-card universe-card--large" href="menu.html#boissons">
+              <img src="images/boisson-maison.png" alt="Boisson maison fraîche au citron et à la menthe" loading="lazy" />
+              <span class="universe-index">04</span>
+              <div class="universe-copy">
+                <p>Café, matcha &amp; boissons maison</p>
+                <h3>À boire,<br /><em>à savourer</em></h3>
+                <span>Voir la carte <b aria-hidden="true">→</b></span>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
 
-      <section class="vitrine" id="vitrine">
-        <div class="vitrine-picture">
-          <img
-            src="images/vitrine-gourmande.png"
-            alt="Vitrine avec desserts, sandwichs et bowls du jour"
-          />
+      <section class="vitrine" id="vitrine" aria-labelledby="vitrine-title">
+        <div class="vitrine-media">
+          <img src="images/delices-vitrine.png" alt="Vitrine gourmande d'Arcs Café" loading="lazy" />
         </div>
         <div class="vitrine-copy">
-          <p class="overline">Au comptoir</p>
-          <h2>Les envies<br /><em>du jour.</em></h2>
+          <p class="eyebrow">Au comptoir</p>
+          <h2 id="vitrine-title">La vitrine<br /><em>gourmande.</em></h2>
           <p>
-            Une vitrine qui évolue tout au long de la journée : desserts
-            gourmands, sandwichs généreux et bowls frais à emporter ou à
+            Desserts, sandwichs et bowls du jour : une sélection qui évolue
+            selon les envies et les produits du moment, à emporter ou à
             savourer sur place.
           </p>
-          <div class="vitrine-list">
-            <span>Desserts maison</span>
-            <span>Sandwichs du jour</span>
-            <span>Bowls frais</span>
-          </div>
+          <ul>
+            <li>Douceurs maison</li>
+            <li>Sandwichs du jour</li>
+            <li>Bowls frais</li>
+          </ul>
         </div>
       </section>
 
-      <section class="menu-preview" id="carte">
-        <div class="layout">
-          <div class="menu-preview__lead">
-            <div>
-              <p class="overline">La carte Arcs Café</p>
-              <h2>Choisir son<br /><em>envie.</em></h2>
+      <section class="menu-callout" aria-labelledby="menu-callout-title">
+        <div class="section-shell menu-callout__inner">
+          <div>
+            <p class="eyebrow eyebrow--light">La carte à table</p>
+            <h2 id="menu-callout-title">Choisissez<br /><em>votre envie.</em></h2>
+          </div>
+          <div class="menu-callout__action">
+            <p>
+              Une carte claire et facile à lire, pensée pour votre téléphone
+              comme pour le QR code de la table.
+            </p>
+            <a class="button button--paper" href="menu.html">Ouvrir la carte <span aria-hidden="true">↗</span></a>
+          </div>
+          <ul class="menu-callout__tags" aria-label="Les rubriques de la carte">
+            <li>Galettes</li>
+            <li>Gaufres</li>
+            <li>Délices</li>
+            <li>Smoothies</li>
+            <li>Boissons</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="moments" aria-label="Événements et traiteur">
+        <div class="section-shell moments__inner">
+          <p class="eyebrow">Vos moments chez Arcs Café</p>
+          <p class="moments__statement">Salle privatisable · Service traiteur sur place ou à emporter.</p>
+          <a class="text-link" href="tel:+33707070707">Parlons de votre événement <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="section-shell contact__grid">
+          <div class="contact-intro">
+            <p class="eyebrow">Nous trouver</p>
+            <h2 id="contact-title">Passez<br /><em>nous voir.</em></h2>
+            <p>Pour un café, un déjeuner, un brunch ou une douceur à emporter.</p>
+          </div>
+          <div class="contact-details">
+            <a class="contact-detail" href="https://www.google.com/maps/search/?api=1&amp;query=19+Rue+Terme+69001+Lyon" target="_blank" rel="noreferrer">
+              <span>Adresse</span>
+              <strong>19 rue Terme,<br />Lyon 1er <i aria-hidden="true">↗</i></strong>
+            </a>
+            <a class="contact-detail" href="tel:+33707070707">
+              <span>Téléphone</span>
+              <strong>07 07 07 07 07</strong>
+            </a>
+            <div class="contact-detail">
+              <span>Horaires d'ouverture</span>
+              <strong>8 h — 20 h</strong>
             </div>
-            <div class="menu-preview__intro">
-              <p>
-                Une carte pensée pour être consultée facilement à table, sur
-                téléphone comme sur ordinateur.
-              </p>
-              <a class="button button--gold" href="menu.html">Ouvrir la carte <span>↗</span></a>
-            </div>
           </div>
-
-          <div class="menu-preview__grid">
-            <a class="menu-preview-card" href="menu.html#galettes">
-              <span>01</span>
-              <h3>Galettes<br /><em>salées</em></h3>
-              <p>La tradition du sarrasin.</p>
-              <b>5 recettes <i>→</i></b>
-            </a>
-            <a class="menu-preview-card menu-preview-card--green" href="menu.html#gaufres">
-              <span>02</span>
-              <h3>Gaufres<br /><em>salées</em></h3>
-              <p>Aux herbes fraîches et bien garnies.</p>
-              <b>4 recettes <i>→</i></b>
-            </a>
-            <a class="menu-preview-card menu-preview-card--gold" href="menu.html#delices">
-              <span>03</span>
-              <h3>Délices<br /><em>sucrés</em></h3>
-              <p>En crêpe ou en gaufre.</p>
-              <b>5 recettes <i>→</i></b>
-            </a>
-            <a class="menu-preview-card menu-preview-card--dark" href="menu.html#boissons">
-              <span>04</span>
-              <h3>Boissons<br /><em>maison</em></h3>
-              <p>Chaud, glacé ou fruité.</p>
-              <b>Voir la sélection <i>→</i></b>
-            </a>
-          </div>
-          <p class="menu-preview__note">Toutes nos galettes et gaufres salées sont accompagnées d’une salade composée.</p>
-        </div>
-      </section>
-
-      <section class="events">
-        <p class="overline">Vos moments chez Arcs Café</p>
-        <h2>Salle privatisable.<br /><em>Service traiteur sur place ou à emporter.</em></h2>
-        <a class="quiet-link quiet-link--light" href="tel:+33707070707">Parlons de votre événement <span>→</span></a>
-      </section>
-
-      <section class="visit" id="adresse">
-        <div class="visit-main">
-          <p class="overline">Nous trouver</p>
-          <h2>Venez nous<br /><em>rendre visite.</em></h2>
-          <p>
-            Pour une pause café, un déjeuner gourmand ou une douceur à emporter,
-            Arcs Café vous accueille tout au long de la journée.
-          </p>
-          <a
-            class="button button--outline"
-            href="https://www.google.com/maps/search/?api=1&amp;query=19+Rue+Terme+69001+Lyon"
-            target="_blank"
-            rel="noreferrer"
-          >Voir l’itinéraire <span>↗</span></a>
-        </div>
-
-        <div class="visit-card">
-          <div>
-            <span>Adresse</span>
-            <strong>19 rue Terme,<br />Lyon 1er</strong>
-          </div>
-          <div>
-            <span>Téléphone</span>
-            <strong><a href="tel:+33707070707">07 07 07 07 07</a></strong>
-          </div>
-          <div>
-            <span>Horaires d’ouverture</span>
-            <strong>8h - 20h</strong>
-          </div>
-          <p>À bientôt chez Arcs Café.</p>
         </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
       <a class="wordmark wordmark--footer" href="#accueil"><span>ARCS</span><strong>CAFÉ</strong></a>
-      <p>© 2026 Arcs Café · Lyon 1er</p>
-      <a href="#accueil">Retour en haut ↑</a>
+      <p>19 rue Terme · Lyon 1er</p>
+      <a href="#accueil">Retour en haut <span aria-hidden="true">↑</span></a>
     </footer>
   </body>
 </html>
