@@ -172,3 +172,51 @@ footer small { font-size: 10px; letter-spacing: .13em; }
   .actions { gap: 18px; }
   .button { padding: 11px 14px; font-size: 10px; }
 }
+
+/* ---- Améliorations ---- */
+/* Contraste : eyebrows et textes dorés sur fond clair */
+.dark, .footer-phone { color: #7a5a1e; }
+.celebrate .pills span { background: rgba(255,255,255,.35); }
+
+/* Hero : une seule entrée orchestrée */
+@keyframes rise { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
+.hero-copy > * { animation: rise .8s cubic-bezier(.2,.7,.2,1) both; }
+.hero-copy > :nth-child(2) { animation-delay: .08s; }
+.hero-copy > :nth-child(3) { animation-delay: .16s; }
+.hero-copy > :nth-child(4) { animation-delay: .24s; }
+.hero-copy > :nth-child(5) { animation-delay: .32s; }
+.hero-image { animation: rise 1s .15s cubic-bezier(.2,.7,.2,1) both; }
+
+/* Navigation : états plus lisibles */
+.nav-links a { padding: 6px 0; border-bottom: 1px solid transparent; }
+.nav-links a:hover { border-color: var(--gold); }
+
+/* Cartes d'offre : texte plus lisible, aération */
+.cards article { padding-bottom: 8px; }
+.cards article img { border-radius: 4px 4px 0 0; }
+
+/* Section « Réserver en trois étapes » */
+.process { padding: 20px 0 40px; }
+.process h2 { max-width: 560px; margin-bottom: 44px; font-size: clamp(32px, 4vw, 48px); letter-spacing: -.03em; line-height: 1.08; }
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin: 0; padding: 0; list-style: none; counter-reset: s; }
+.steps li { position: relative; padding: 0 32px 0 0; }
+.steps li + li { padding-left: 32px; border-left: 1px solid var(--line); }
+.steps b { display: grid; width: 46px; height: 46px; place-items: center; margin-bottom: 20px; border-radius: 50%; background: var(--ink); color: var(--gold-light); font: 500 19px "Playfair Display", Georgia, serif; }
+.steps h3 { margin-bottom: 8px; font-size: 24px; }
+.steps p { max-width: 300px; margin: 0; font-size: 15px; }
+
+/* Bouton d'appel flottant aussi sur ordinateur, après scroll */
+.call-float { display: flex; opacity: 0; transform: translateY(14px); pointer-events: none; transition: opacity .25s ease, transform .25s ease; }
+.call-float.show { opacity: 1; transform: none; pointer-events: auto; }
+.call-float:hover { background: #184e40; }
+
+@media (max-width: 750px) {
+  .steps { grid-template-columns: 1fr; gap: 34px; }
+  .steps li, .steps li + li { padding: 0; border: 0; }
+  .process { padding-bottom: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
