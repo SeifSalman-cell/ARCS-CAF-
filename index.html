@@ -1,236 +1,55 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Arcs Café à Lyon 1er : brunch le week-end, galettes de sarrasin, gaufres salées, délices sucrés et boissons maison."
-    />
-    <meta name="theme-color" content="#163e31" />
-    <meta name="color-scheme" content="light" />
-    <title>Arcs Café | Brunch, galettes & délices à Lyon 1er</title>
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23163e31'/%3E%3Cpath d='M14 48V31a18 18 0 0 1 36 0v17M23 48V32a9 9 0 0 1 18 0v16' fill='none' stroke='%23d5ae5a' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,ital,wght@6..96,400;6..96,500;6..96,600;6..96,700;6..96,400i;6..96,500i&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#contenu">Aller au contenu</a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Arcs Café — privatisation et événements à Lyon 1er.">
+  <title>Arcs Café | Privatisation & événements</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="hero" id="accueil">
+    <nav class="nav wrap">
+      <a class="logo" href="#accueil">ARCS <small>CAFÉ · LYON</small></a>
+      <div class="nav-links"><a href="#lieu">Le lieu</a><a href="#prestations">Prestations</a><a href="#contact">Contact</a></div>
+      <a class="nav-button" href="#contact">Privatiser</a>
+    </nav>
+    <div class="hero-grid wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">LYON 1ER · PRIVATISATION & ÉVÉNEMENTS</p>
+        <h1>Le décor de vos<br><em>plus beaux moments.</em></h1>
+        <p class="intro">Une adresse chaleureuse au cœur de Lyon pour réunir, célébrer, danser et savourer.</p>
+        <div class="actions"><a class="button gold" href="#contact">Organiser un événement <b>→</b></a><a class="simple-link" href="#lieu">Découvrir le lieu ↓</a></div>
+      </div>
+      <div class="hero-image"><img src="images/hero.jpg" alt="Arcs Café Lyon"><span>Un café, une salle,<br>mille souvenirs.</span></div>
+    </div>
+  </header>
 
-    <header class="site-header">
-      <a class="wordmark" href="#accueil" aria-label="Arcs Café, accueil">
-        <span>ARCS</span><strong>CAFÉ</strong>
-      </a>
-      <nav class="site-nav" aria-label="Navigation principale">
-        <a href="#brunch">Le brunch</a>
-        <a href="#univers">Les univers</a>
-        <a href="#vitrine">La vitrine</a>
-        <a href="#contact">Nous trouver</a>
-      </nav>
-      <a class="header-cta" href="menu.html">La carte <span aria-hidden="true">↘</span></a>
-    </header>
+  <main>
+    <section class="intro-section wrap" id="lieu">
+      <p class="eyebrow dark">L’ESPRIT ARCS CAFÉ</p>
+      <div class="two-columns"><h2>Bien plus qu’une<br><em>salle à louer.</em></h2><div><p class="lead">Arcs Café est un lieu à taille humaine, pensé pour les moments qui comptent.</p><p>Notre équipe vous accompagne de la première idée jusqu’au dernier verre. Ambiance intime ou grande soirée, nous adaptons l’espace, la cuisine et l’animation à votre envie.</p></div></div>
+      <div class="numbers"><div><strong>50</strong><span>personnes<br>assises</span></div><div><strong>70</strong><span>personnes<br>debout</span></div><div><strong>01</strong><span>espace pour<br>danser</span></div><div><strong>∞</strong><span>possibilités<br>à imaginer</span></div></div>
+    </section>
 
-    <main id="contenu">
-      <section class="hero" id="accueil" aria-labelledby="hero-title">
-        <div class="hero-media" aria-hidden="true">
-          <img src="images/gaufre-falafel.png" alt="" />
-        </div>
-        <div class="hero-shell">
-          <div class="hero-copy">
-            <p class="eyebrow eyebrow--light">19 rue Terme · Lyon 1er</p>
-            <h1 id="hero-title">Des matins qui durent.<br /><em>Des envies qui se savourent.</em></h1>
-            <p class="hero-text">
-              Brunch le week-end, galettes de sarrasin, gaufres salées,
-              délices sucrés et boissons maison : une table faite pour prendre
-              le temps.
-            </p>
-            <div class="hero-actions">
-              <a class="button button--gold" href="menu.html">Découvrir la carte <span aria-hidden="true">↗</span></a>
-              <a class="button button--ghost" href="#brunch">Le brunch <span aria-hidden="true">↓</span></a>
-            </div>
-          </div>
+    <section class="offer" id="prestations">
+      <div class="wrap"><div class="section-head"><div><p class="eyebrow">LA FORMULE QUI VOUS VA</p><h2>Tout est déjà là.<br><em>À vous d’inventer la suite.</em></h2></div><p>Nous mettons notre lieu, notre savoir-faire et notre énergie au service de votre événement.</p></div>
+        <div class="cards">
+          <article><img src="images/salle.jpg" alt="Salle Arcs Café"><p class="card-no">01 · RÉCEPTIONS</p><h3>Un lieu qui vous ressemble</h3><p>Un café élégant et vivant, entièrement modulable pour créer votre moment.</p></article>
+          <article><img src="images/buffet.jpg" alt="Buffet Arcs Café"><p class="card-no">02 · COCKTAILS & BUFFETS</p><h3>Une table généreuse</h3><p>Buffet, cocktail dînatoire, brunch ou repas sur mesure : nous imaginons votre formule.</p></article>
+          <article><img src="images/soiree.jpg" alt="Soirée Arcs Café"><p class="card-no">03 · SOIRÉES</p><h3>On fait durer la fête</h3><p>Musique, bar, karaoké et piste de danse pour une soirée mémorable.</p></article>
+        </div></div>
+    </section>
 
-          <div class="hero-meta" aria-label="Les essentiels Arcs Café">
-            <div><span>01</span><strong>Brunch le week-end</strong></div>
-            <div><span>02</span><strong>Préparé à la minute</strong></div>
-            <div><span>03</span><strong>Ouvert de 8 h à 20 h</strong></div>
-          </div>
-        </div>
-        <p class="hero-side-note">ARCS CAFÉ · BRUNCH &amp; PAUSES GOURMANDES</p>
-      </section>
+    <section class="amenities wrap"><img src="images/cuisine.jpg" alt="Cuisine Arcs Café"><div><p class="eyebrow">VOTRE ÉVÉNEMENT, SUR MESURE</p><h2>La fête en<br><em>toute simplicité.</em></h2><ol><li><b>01</b><span><strong>Buffet & cuisine</strong>Des propositions généreuses, du cocktail au repas complet.</span></li><li><b>02</b><span><strong>Bar & boissons</strong>Une sélection pensée pour accompagner votre soirée.</span></li><li><b>03</b><span><strong>Musique & karaoké</strong>Une ambiance qui monte au fil de la soirée.</span></li><li><b>04</b><span><strong>Espace danse</strong>Parce qu’une belle soirée ne s’arrête jamais trop tôt.</span></li></ol></div></section>
 
-      <section class="brunch" id="brunch" aria-labelledby="brunch-title">
-        <div class="section-shell brunch-grid">
-          <div class="brunch-lead">
-            <p class="eyebrow">Le rendez-vous du week-end</p>
-            <h2 id="brunch-title">Le brunch,<br /><em>sans se presser.</em></h2>
-            <p>
-              Le samedi et le dimanche, on se retrouve autour d'une table
-              généreuse : une création salée préparée à la minute, une douceur
-              à choisir et une belle boisson pour prolonger le moment.
-            </p>
-            <a class="text-link" href="menu.html#brunch">Découvrir l'esprit brunch <span aria-hidden="true">→</span></a>
-          </div>
+    <section class="celebrate"><p class="eyebrow dark">POUR TOUTES LES OCCASIONS</p><h2>On se retrouve<br><em>pour célébrer.</em></h2><div class="pills"><span>Anniversaire</span><span>Afterwork</span><span>Repas d’entreprise</span><span>Baby shower</span><span>Cérémonie civile</span><span>Soirée privée</span></div><a class="button green" href="#contact">Parlons de votre projet <b>→</b></a></section>
 
-          <div class="brunch-mosaic" aria-label="Une sélection pour le brunch Arcs Café">
-            <figure class="brunch-photo brunch-photo--salty">
-              <img src="images/crepe-salee.png" alt="Galette de sarrasin aux champignons et œuf" loading="lazy" />
-            </figure>
-            <figure class="brunch-photo brunch-photo--sweet">
-              <img src="images/delices-sucres.png" alt="Crêpe aux fraises et gaufre garnie de pistache" loading="lazy" />
-            </figure>
-            <div class="brunch-card">
-              <p>À composer</p>
-              <strong>Salé<br />Douceur<br />Boisson</strong>
-              <span>Samedi &amp; dimanche</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="univers" id="univers" aria-labelledby="univers-title">
-        <div class="section-shell">
-          <div class="section-heading section-heading--split">
-            <div>
-              <p class="eyebrow">À chaque moment son envie</p>
-              <h2 id="univers-title">Quatre<br /><em>univers.</em></h2>
-            </div>
-            <p class="section-intro">
-              Du premier café à la douceur de l'après-midi, tout est pensé pour
-              s'attabler, partager ou emporter une pause qui fait plaisir.
-            </p>
-          </div>
-
-          <div class="universe-grid">
-            <a class="universe-card universe-card--large" href="menu.html#galettes">
-              <img src="images/crepe-salee.png" alt="Galette de sarrasin maison" loading="lazy" />
-              <span class="universe-index">01</span>
-              <div class="universe-copy">
-                <p>La tradition du sarrasin</p>
-                <h3>Galettes<br /><em>salées</em></h3>
-                <span>Voir la carte <b aria-hidden="true">→</b></span>
-              </div>
-            </a>
-            <a class="universe-card" href="menu.html#gaufres">
-              <img src="images/gaufre-falafel.png" alt="Gaufre salée aux herbes fraîches" loading="lazy" />
-              <span class="universe-index">02</span>
-              <div class="universe-copy">
-                <p>Des recettes bien garnies</p>
-                <h3>Gaufres<br /><em>salées</em></h3>
-                <span>Voir la carte <b aria-hidden="true">→</b></span>
-              </div>
-            </a>
-            <a class="universe-card" href="menu.html#delices">
-              <img src="images/delices-sucres.png" alt="Crêpe et gaufre sucrées gourmandes" loading="lazy" />
-              <span class="universe-index">03</span>
-              <div class="universe-copy">
-                <p>Crêpe ou gaufre au choix</p>
-                <h3>Délices<br /><em>sucrés</em></h3>
-                <span>Voir la carte <b aria-hidden="true">→</b></span>
-              </div>
-            </a>
-            <a class="universe-card universe-card--large" href="menu.html#boissons">
-              <img src="images/boisson-maison.png" alt="Boisson maison fraîche au citron et à la menthe" loading="lazy" />
-              <span class="universe-index">04</span>
-              <div class="universe-copy">
-                <p>Café, matcha &amp; boissons maison</p>
-                <h3>À boire,<br /><em>à savourer</em></h3>
-                <span>Voir la carte <b aria-hidden="true">→</b></span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="vitrine" id="vitrine" aria-labelledby="vitrine-title">
-        <div class="vitrine-media">
-          <img src="images/delices-vitrine.png" alt="Vitrine gourmande d'Arcs Café" loading="lazy" />
-        </div>
-        <div class="vitrine-copy">
-          <p class="eyebrow">Au comptoir</p>
-          <h2 id="vitrine-title">La vitrine<br /><em>gourmande.</em></h2>
-          <p>
-            Desserts, sandwichs et bowls du jour : une sélection qui évolue
-            selon les envies et les produits du moment, à emporter ou à
-            savourer sur place.
-          </p>
-          <ul>
-            <li>Douceurs maison</li>
-            <li>Sandwichs du jour</li>
-            <li>Bowls frais</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="menu-callout" aria-labelledby="menu-callout-title">
-        <div class="section-shell menu-callout__inner">
-          <div>
-            <p class="eyebrow eyebrow--light">La carte à table</p>
-            <h2 id="menu-callout-title">Choisissez<br /><em>votre envie.</em></h2>
-          </div>
-          <div class="menu-callout__action">
-            <p>
-              Une carte claire et facile à lire, pensée pour votre téléphone
-              comme pour le QR code de la table.
-            </p>
-            <a class="button button--paper" href="menu.html">Ouvrir la carte <span aria-hidden="true">↗</span></a>
-          </div>
-          <ul class="menu-callout__tags" aria-label="Les rubriques de la carte">
-            <li>Galettes</li>
-            <li>Gaufres</li>
-            <li>Délices</li>
-            <li>Smoothies</li>
-            <li>Boissons</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="moments" aria-label="Événements et traiteur">
-        <div class="section-shell moments__inner">
-          <p class="eyebrow">Vos moments chez Arcs Café</p>
-          <p class="moments__statement">Salle privatisable · Service traiteur sur place ou à emporter.</p>
-          <a class="text-link" href="tel:+33707070707">Parlons de votre événement <span aria-hidden="true">→</span></a>
-        </div>
-      </section>
-
-      <section class="contact" id="contact" aria-labelledby="contact-title">
-        <div class="section-shell contact__grid">
-          <div class="contact-intro">
-            <p class="eyebrow">Nous trouver</p>
-            <h2 id="contact-title">Passez<br /><em>nous voir.</em></h2>
-            <p>Pour un café, un déjeuner, un brunch ou une douceur à emporter.</p>
-          </div>
-          <div class="contact-details">
-            <a class="contact-detail" href="https://www.google.com/maps/search/?api=1&amp;query=19+Rue+Terme+69001+Lyon" target="_blank" rel="noreferrer">
-              <span>Adresse</span>
-              <strong>19 rue Terme,<br />Lyon 1er <i aria-hidden="true">↗</i></strong>
-            </a>
-            <a class="contact-detail" href="tel:+33707070707">
-              <span>Téléphone</span>
-              <strong>07 07 07 07 07</strong>
-            </a>
-            <div class="contact-detail">
-              <span>Horaires d'ouverture</span>
-              <strong>8 h — 20 h</strong>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <a class="wordmark wordmark--footer" href="#accueil"><span>ARCS</span><strong>CAFÉ</strong></a>
-      <p>19 rue Terme · Lyon 1er</p>
-      <a href="#accueil">Retour en haut <span aria-hidden="true">↑</span></a>
-    </footer>
-  </body>
+    <section class="contact" id="contact"><div class="wrap contact-grid"><div><p class="eyebrow">ARCS CAFÉ · LYON 1ER</p><h2>Votre événement<br><em>commence ici.</em></h2><p>Écrivez-nous ou venez visiter la salle. Nous imaginerons votre moment avec vous.</p><a class="button gold" href="tel:+33707070707">Appeler Arcs Café <b>→</b></a></div><aside><p>19 rue Terme<br>69001 Lyon</p><p><a href="tel:+33707070707">07 07 07 07 07</a><br><a href="mailto:contact@arcscafe.fr">contact@arcscafe.fr</a></p><small>VISITES SUR RENDEZ-VOUS</small></aside></div></section>
+  </main>
+  <footer class="wrap"><a class="logo" href="#accueil">ARCS <small>CAFÉ · LYON</small></a><span>Privatisation · Buffet · Bar · Musique</span><small>© 2026 ARCS CAFÉ</small></footer>
+</body>
 </html>
