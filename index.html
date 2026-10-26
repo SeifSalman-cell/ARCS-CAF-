@@ -4,6 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Arcs Café à Lyon 1er — location et privatisation de salle pour vos événements, cocktails, buffets et soirées.">
+  <meta name="theme-color" content="#062820">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Arcs Café | Privatisation & événements à Lyon">
+  <meta property="og:description" content="Salle privatisable à Lyon 1er : 50 personnes assises, 70 debout. Buffet, bar, musique et espace danse.">
+  <meta property="og:image" content="images/hero.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23062820'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle' fill='%23c9a55c' font-family='Georgia'%3EA%3C/text%3E%3C/svg%3E">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"EventVenue","name":"Arcs Café","telephone":"+33783704499","maximumAttendeeCapacity":70,"address":{"@type":"PostalAddress","streetAddress":"19 rue Terme","postalCode":"69001","addressLocality":"Lyon","addressCountry":"FR"}}</script>
   <title>Arcs Café | Privatisation & événements à Lyon</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,7 +49,7 @@
       </div>
 
       <div class="hero-image">
-        <img src="images/hero.jpg" alt="Buffet gourmand et ambiance chaleureuse à Arcs Café">
+        <img src="images/hero.jpg" fetchpriority="high" width="600" height="515" alt="Buffet gourmand et ambiance chaleureuse à Arcs Café">
         <a class="booking-card" href="tel:+33783704499">
           <span>Visites & disponibilités</span>
           <strong>07&nbsp;83&nbsp;70&nbsp;44&nbsp;99</strong>
@@ -82,25 +89,34 @@
 
         <div class="cards">
           <article>
-            <img src="images/salle.jpg" alt="Salle privatisable d'Arcs Café">
+            <img src="images/salle.jpg" loading="lazy" decoding="async" alt="Salle privatisable d'Arcs Café">
             <p class="card-no">01 · RÉCEPTIONS</p>
             <h3>Un lieu qui vous ressemble</h3>
             <p>Un espace convivial et modulable pour vos moments en petit comité comme vos grandes retrouvailles.</p>
           </article>
           <article>
-            <img src="images/buffet.jpg" alt="Buffet préparé pour un événement à Arcs Café">
+            <img src="images/buffet.jpg" loading="lazy" decoding="async" alt="Buffet préparé pour un événement à Arcs Café">
             <p class="card-no">02 · COCKTAILS & BUFFETS</p>
             <h3>Une table généreuse</h3>
             <p>Buffet, cocktail dînatoire, brunch ou repas : composez une formule qui vous ressemble.</p>
           </article>
           <article>
-            <img src="images/soiree.jpg" alt="Ambiance de soirée à Arcs Café">
+            <img src="images/soiree.jpg" loading="lazy" decoding="async" alt="Ambiance de soirée à Arcs Café">
             <p class="card-no">03 · SOIRÉES</p>
             <h3>On fait durer la fête</h3>
             <p>Bar, musique, karaoké et espace de danse : tout est prêt pour une soirée mémorable.</p>
           </article>
         </div>
       </div>
+    </section>
+
+    <section class="process wrap" aria-labelledby="process-title">
+      <h2 id="process-title">Réserver en trois étapes.</h2>
+      <ol class="steps">
+        <li><b>1</b><h3>Appelez-nous</h3><p>Donnez-nous la date, le nombre d’invités et l’ambiance recherchée.</p></li>
+        <li><b>2</b><h3>Visitez la salle</h3><p>Venez voir le lieu sur rendez-vous et choisissez votre formule.</p></li>
+        <li><b>3</b><h3>Profitez de la fête</h3><p>Buffet, bar, musique : nous préparons le reste avec vous.</p></li>
+      </ol>
     </section>
 
     <section class="callout wrap" aria-label="Réserver une visite">
@@ -112,7 +128,7 @@
     </section>
 
     <section class="amenities wrap">
-      <img src="images/cuisine.jpg" alt="Cuisine et buffet d'Arcs Café">
+      <img src="images/cuisine.jpg" loading="lazy" decoding="async" alt="Cuisine et buffet d'Arcs Café">
       <div>
         <p class="eyebrow">VOTRE ÉVÉNEMENT, SUR MESURE</p>
         <h2>La fête en<br><em>toute simplicité.</em></h2>
@@ -162,5 +178,10 @@
   </footer>
 
   <a class="call-float" href="tel:+33783704499" aria-label="Appeler Arcs Café au 07 83 70 44 99"><span>Appeler</span><b>07 83 70 44 99</b></a>
+  <script>
+    const float = document.querySelector('.call-float');
+    const toggle = () => float.classList.toggle('show', scrollY > 600);
+    addEventListener('scroll', toggle, { passive: true }); toggle();
+  </script>
 </body>
 </html>
