@@ -1,0 +1,27 @@
+/* Arcs Café — styles des nouvelles sections (à charger APRÈS style.css) */
+:root{--a-green:#062820;--a-gold:#c9a55c;--a-cream:#f7f3ea;--a-ink:#17231f}
+.activities{padding:clamp(56px,8vw,110px) 0;background:var(--a-cream);color:var(--a-ink)}
+.activities .section-head{margin-bottom:48px}
+.act-group{margin-top:56px}
+.act-group:first-of-type{margin-top:0}
+.act-group>header{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 24px;border-bottom:2px solid var(--a-gold);padding-bottom:14px;margin-bottom:24px}
+.act-group h3{font-family:"Playfair Display",Georgia,serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:600;margin:0;color:var(--a-green)}
+.act-group header p{margin:0;max-width:52ch;opacity:.8}
+.act-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;list-style:none;margin:0;padding:0}
+.act-grid li{background:#fff;border-left:4px solid var(--a-gold);padding:20px 20px 22px;border-radius:2px}
+.act-grid h4{font-family:"Playfair Display",Georgia,serif;font-size:1.25rem;margin:0 0 6px;color:var(--a-green)}
+.act-grid p{margin:0;font-size:.95rem;line-height:1.55}
+.act-group.dark{background:var(--a-green);color:#f1ece0;margin-inline:calc(-1*clamp(16px,4vw,40px));padding:32px clamp(16px,4vw,40px)}
+.act-group.dark h3,.act-group.dark h4{color:var(--a-gold)}
+.act-group.dark li{background:rgba(255,255,255,.06)}
+.gallery{padding:clamp(56px,8vw,110px) 0;background:var(--a-green);color:#f1ece0}
+.gallery h2{color:#fff}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:12px;margin-top:36px}
+.gal-grid figure{margin:0;position:relative;overflow:hidden;background:#0c3a2f}
+.gal-grid img{width:100%;height:100%;object-fit:cover;display:block}
+.gal-grid figcaption{position:absolute;inset:auto 0 0;padding:28px 14px 12px;font-size:.9rem;background:linear-gradient(transparent,rgba(0,0,0,.7));color:#fff}
+.gal-grid .wide{grid-column:span 2}
+.gal-grid .tall{grid-row:span 2}
+.gal-note{margin-top:20px;opacity:.7;font-size:.9rem}
+@media(max-width:800px){.gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}.gal-grid .wide{grid-column:span 2}}
+@media(max-width:480px){.gal-grid{grid-template-columns:1fr}.gal-grid .wide{grid-column:auto}.gal-grid .tall{grid-row:auto}}
