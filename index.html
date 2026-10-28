@@ -16,15 +16,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/extra.css">
 </head>
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
 
   <header class="hero" id="accueil">
+    <img class="hero-bg" src="images/hero.jpg" fetchpriority="high" width="1200" height="800" alt="Buffet gourmand et ambiance chaleureuse à Arcs Café">
     <nav class="nav wrap" aria-label="Navigation principale">
       <a class="logo" href="#accueil" aria-label="Arcs Café — accueil">ARCS <small>CAFÉ · LYON</small></a>
-      <div class="nav-links">
+      <div class="nav-links" id="menu">
         <a href="#lieu">Le lieu</a>
         <a href="#activites">Activités</a>
         <a href="#prestations">Prestations</a>
@@ -33,32 +33,28 @@
       </div>
       <a class="nav-phone" href="tel:+33783704499"><span>Réservations</span>07&nbsp;83&nbsp;70&nbsp;44&nbsp;99</a>
       <a class="nav-button" href="tel:+33783704499">Appeler</a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="menu" type="button">Menu</button>
     </nav>
 
-    <div class="hero-grid wrap">
-      <div class="hero-copy">
-        <p class="eyebrow">LYON 1ER · ÉVÉNEMENTS, PRO & BIEN-ÊTRE</p>
-        <h1>Un lieu, mille façons<br><em>de se retrouver.</em></h1>
-        <p class="intro">Fêtes, mariages, séminaires, formations, team building, yoga ou méditation : Arcs Café se privatise et s’adapte à votre projet.</p>
-        <div class="actions">
-          <a class="button gold" href="tel:+33783704499"><span>Appeler pour réserver</span><b>↗</b></a>
-          <a class="simple-link" href="#activites">Voir les activités <b>↓</b></a>
-        </div>
-        <ul class="hero-details" aria-label="Informations pratiques">
-          <li><strong>50</strong> personnes assises</li>
-          <li><strong>70</strong> personnes debout</li>
-          <li><strong>19 rue Terme</strong> Lyon 1er</li>
-        </ul>
+    <div class="hero-copy wrap">
+      <p class="eyebrow">Lyon 1er · 19 rue Terme</p>
+      <h1>Un lieu, mille façons <em>de se retrouver.</em></h1>
+      <p class="intro">Fêtes, mariages, séminaires, formations, team building, yoga ou méditation : Arcs Café se privatise et s’adapte à votre projet.</p>
+      <div class="actions">
+        <a class="button gold" href="tel:+33783704499"><span>Appeler pour réserver</span><b>↗</b></a>
+        <a class="simple-link" href="#activites">Voir les activités <b>↓</b></a>
       </div>
+      <ul class="hero-details" aria-label="Capacité">
+        <li><strong>50</strong> assis</li>
+        <li><strong>70</strong> debout</li>
+        <li><strong>1</strong> espace danse</li>
+      </ul>
+    </div>
 
-      <div class="hero-image">
-        <img src="images/hero.jpg" fetchpriority="high" width="600" height="515" alt="Buffet gourmand et ambiance chaleureuse à Arcs Café">
-        <a class="booking-card" href="tel:+33783704499">
-          <span>Visites & disponibilités</span>
-          <strong>07&nbsp;83&nbsp;70&nbsp;44&nbsp;99</strong>
-          <b>Appeler ↗</b>
-        </a>
-      </div>
+    <div class="hero-tiles wrap">
+      <a href="#pro"><strong>Entreprise & pro</strong><span>Séminaires, formations, team building</span></a>
+      <a href="#bien-etre"><strong>Bien-être</strong><span>Yoga, Qi Gong, méditation, sophrologie</span></a>
+      <a href="#fetes"><strong>Fêtes & famille</strong><span>Mariages, anniversaires, repas</span></a>
     </div>
   </header>
 
@@ -178,10 +174,9 @@
           <figure class="wide tall"><img src="images/hero.jpg" loading="lazy" decoding="async" alt="Buffet gourmand et ambiance chaleureuse à Arcs Café"><figcaption>L’ambiance Arcs Café</figcaption></figure>
           <figure><img src="images/salle.jpg" loading="lazy" decoding="async" alt="Salle privatisable d'Arcs Café"><figcaption>La salle</figcaption></figure>
           <figure><img src="images/buffet.jpg" loading="lazy" decoding="async" alt="Buffet préparé pour un événement"><figcaption>Le buffet</figcaption></figure>
-          <figure class="wide"><img src="images/soiree.jpg" loading="lazy" decoding="async" alt="Ambiance de soirée à Arcs Café"><figcaption>Les soirées</figcaption></figure>
+          <figure><img src="images/soiree.jpg" loading="lazy" decoding="async" alt="Ambiance de soirée à Arcs Café"><figcaption>Les soirées</figcaption></figure>
           <figure><img src="images/cuisine.jpg" loading="lazy" decoding="async" alt="Cuisine et buffet d'Arcs Café"><figcaption>La cuisine</figcaption></figure>
         </div>
-        <p class="gal-note">Ajoutez vos photos (yoga, séminaire, mariage…) dans le dossier images/ et copiez un bloc &lt;figure&gt;.</p>
       </div>
     </section>
 
@@ -253,10 +248,25 @@
   </footer>
 
   <a class="call-float" href="tel:+33783704499" aria-label="Appeler Arcs Café au 07 83 70 44 99"><span>Appeler</span><b>07 83 70 44 99</b></a>
+  <dialog id="lightbox" aria-label="Photo agrandie"><img alt=""><p></p><button type="button" aria-label="Fermer">✕</button></dialog>
   <script>
     const float = document.querySelector('.call-float');
     const toggle = () => float.classList.toggle('show', scrollY > 600);
     addEventListener('scroll', toggle, { passive: true }); toggle();
+
+    const mb = document.querySelector('.menu-btn'), nl = document.querySelector('.nav-links');
+    const setMenu = o => { nl.classList.toggle('open', o); mb.setAttribute('aria-expanded', o); };
+    mb.addEventListener('click', () => setMenu(!nl.classList.contains('open')));
+    nl.addEventListener('click', e => { if (e.target.matches('a')) setMenu(false); });
+
+    const lb = document.getElementById('lightbox'), lbi = lb.querySelector('img'), lbc = lb.querySelector('p');
+    document.querySelectorAll('.gal-grid figure').forEach(f => {
+      f.tabIndex = 0; f.setAttribute('role', 'button');
+      const open = () => { const i = f.querySelector('img'); lbi.src = i.src; lbi.alt = i.alt; lbc.textContent = f.querySelector('figcaption').textContent; lb.showModal(); };
+      f.addEventListener('click', open);
+      f.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
+    });
+    lb.addEventListener('click', () => lb.close());
   </script>
 </body>
 </html>
